@@ -36,7 +36,11 @@ export class MapsManagerService {
   }
 
   _removeMapById(id: string) {
-    return this._Maps.delete(id);
+    const deletedMap = this._Maps.delete(id);
+    if(this.firstMap && this.firstMap.getId() === id){
+       this.firstMap = this._Maps.size>0?this._Maps.values().next().value:null;
+    }
+    return deletedMap;
   }
 
   private generateDefaultId(): string {
