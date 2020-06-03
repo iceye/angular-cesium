@@ -339,7 +339,7 @@ This allows retrieval of maps provided services outside of <code>ac-map</code> s
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/maps-manager/maps-manager.service.ts:42</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/maps-manager/maps-manager.service.ts:46</a></div>
                             </td>
                         </tr>
 
@@ -446,7 +446,7 @@ This allows retrieval of maps provided services outside of <code>ac-map</code> s
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/maps-manager/maps-manager.service.ts:54</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/maps-manager/maps-manager.service.ts:58</a></div>
                             </td>
                         </tr>
 
@@ -527,7 +527,7 @@ bindZoom - should bind zoom level</li>
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="106" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/maps-manager/maps-manager.service.ts:106</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="110" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/maps-manager/maps-manager.service.ts:110</a></div>
                             </td>
                         </tr>
 
@@ -745,7 +745,11 @@ export class MapsManagerService {
   }
 
   _removeMapById(id: string) {
-    return this._Maps.delete(id);
+    const deletedMap &#x3D; this._Maps.delete(id);
+    if(this.firstMap &amp;&amp; this.firstMap.getId() &#x3D;&#x3D;&#x3D; id){
+       this.firstMap &#x3D; this._Maps.size&gt;0?this._Maps.values().next().value:null;
+    }
+    return deletedMap;
   }
 
   private generateDefaultId(): string {

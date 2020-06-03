@@ -669,7 +669,7 @@ You can also use <code>updateLabels()</code> to pass an array of labels of type 
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="494" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:494</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="493" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:493</a></div>
                             </td>
                         </tr>
 
@@ -740,7 +740,7 @@ You can also use <code>updateLabels()</code> to pass an array of labels of type 
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="490" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:490</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="489" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:489</a></div>
                             </td>
                         </tr>
 
@@ -811,7 +811,7 @@ You can also use <code>updateLabels()</code> to pass an array of labels of type 
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="506" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:506</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="505" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:505</a></div>
                             </td>
                         </tr>
 
@@ -882,7 +882,7 @@ You can also use <code>updateLabels()</code> to pass an array of labels of type 
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="498" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:498</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="497" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:497</a></div>
                             </td>
                         </tr>
 
@@ -953,7 +953,7 @@ You can also use <code>updateLabels()</code> to pass an array of labels of type 
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="502" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:502</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="501" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:501</a></div>
                             </td>
                         </tr>
 
@@ -1179,7 +1179,7 @@ You can also use <code>updateLabels()</code> to pass an array of labels of type 
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="481" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:481</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="480" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:480</a></div>
                             </td>
                         </tr>
 
@@ -1905,7 +1905,7 @@ export class EllipsesEditorService {
         });
     }
 
-    const observables &#x3D; [pointDragRegistration, addSecondRadiusRegistration];
+    const observables &#x3D; [pointDragRegistration];
     if (shapeDragRegistration) {
       observables.push(shapeDragRegistration);
     }
@@ -1928,7 +1928,6 @@ export class EllipsesEditorService {
         id,
         editMode: EditModes.CREATE_OR_EDIT,
         editAction: EditActions.DISPOSE,
-        ...this.getEllipseProperties(id),
       } as EllipseEditUpdate);
     };
 
