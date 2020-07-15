@@ -1,6 +1,13 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { AcLayerComponent, AcNotification, ActionType, CesiumService, CoordinateConverter } from 'angular-cesium';
+
 import { Subject } from 'rxjs';
+import {
+  AcLayerComponent,
+  AcNotification,
+  ActionType,
+  CesiumService,
+  CoordinateConverter
+} from '../../../../../angular-cesium/src/lib/angular-cesium';
 // import { CesiumHeatMapMaterialCreator } from 'angular-cesium';
 
 @Component({

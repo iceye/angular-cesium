@@ -1,8 +1,9 @@
 import { Observable, of, of as observableOf } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
-import { AcNotification, ActionType, CesiumService } from 'angular-cesium';
+
 import { MockDataProviderService } from '../../utils/services/dataProvider/mock-data-provider.service';
 import { map } from 'rxjs/operators';
+import {AcNotification, ActionType} from '../../../../../angular-cesium/src/lib/angular-cesium';
 
 @Component({
   selector: 'cylinder-layer-example',

@@ -1,8 +1,9 @@
 import { from, Observable } from 'rxjs';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { AcNotification, ActionType } from 'angular-cesium';
+
 import { map } from 'rxjs/operators';
 import { MockDataProviderService } from '../../utils/services/dataProvider/mock-data-provider.service';
+import {AcNotification, ActionType} from '../../../../../angular-cesium/src/lib/angular-cesium';
 
 @Component({
   selector: 'billboard-layer-example',

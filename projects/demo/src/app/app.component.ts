@@ -4,8 +4,10 @@ import { MatDialog } from '@angular/material/dialog';
 import { MatIconRegistry } from '@angular/material/icon';
 import { MatSidenav } from '@angular/material/sidenav';
 import { AppSettingsService, TracksType } from './services/app-settings-service/app-settings-service';
-import { DraggableToMapService, MapLayerProviderOptions, MapsManagerService } from 'angular-cesium';
+
 import { DemoMapComponent } from './components/demo-map/demo-map.component';
+import {MapLayerProviderOptions, MapsManagerService} from '../../../angular-cesium/src/lib/angular-cesium';
+import {DraggableToMapService} from '../../../angular-cesium/src/lib/angular-cesium-widgets';
 
 @Component({
   selector: 'app-root',

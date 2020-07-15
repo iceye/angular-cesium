@@ -36,6 +36,18 @@
             "scripts": [
               "./node_modules/cesium/Build/Cesium/Cesium.js",
               "./node_modules/socket.io-client/dist/socket.io.js",
+              "./node_modules/geodesy/dms.js",
+              "./node_modules/geodesy/latlon-ellipsoidal.js",
+              "./node_modules/geodesy/latlon-ellipsoidal-datum.js",
+              "./node_modules/geodesy/latlon-ellipsoidal-referenceframe.js",
+              "./node_modules/geodesy/latlon-ellipsoidal-referenceframe-txparams.js",
+              "./node_modules/geodesy/latlon-ellipsoidal-vincenty.js",
+              "./node_modules/geodesy/latlon-nvector-ellipsoidal.js",
+              "./node_modules/geodesy/latlon-nvector-spherical.js",
+              "./node_modules/geodesy/latlon-spherical.js",
+              "./node_modules/geodesy/osgridref.js",
+              "./node_modules/geodesy/utm.js",
+              "./node_modules/geodesy/vector3d.js"
             ]
           },
           "configurations": {

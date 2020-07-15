@@ -1,6 +1,7 @@
 import { from as observableFrom, Observable } from 'rxjs';
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
-import { AcLayerComponent, AcNotification, ActionType } from 'angular-cesium';
+import {AcLayerComponent, AcNotification, ActionType} from '../../../../../angular-cesium/src/lib/angular-cesium';
+
 
 @Component({
   selector: 'label-layer-example',

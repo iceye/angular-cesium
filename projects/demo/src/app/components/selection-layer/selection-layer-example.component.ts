@@ -1,16 +1,15 @@
 import { from as observableFrom, Observable } from 'rxjs';
 import { Component, OnInit, ViewChild } from '@angular/core';
+
+import { MatSnackBar } from '@angular/material/snack-bar';
 import {
   AcEntity,
-  AcLayerComponent,
-  AcNotification,
+  AcLayerComponent, AcNotification,
   ActionType,
   Cartesian3,
-  CesiumEvent,
-  CesiumEventModifier,
+  CesiumEvent, CesiumEventModifier,
   SelectionManagerService
-} from 'angular-cesium';
-import { MatSnackBar } from '@angular/material/snack-bar';
+} from '../../../../../angular-cesium/src/lib/angular-cesium';
 
 class MyEntity extends AcEntity {
   selected = false;

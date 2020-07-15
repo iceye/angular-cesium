@@ -2,7 +2,8 @@ import { from as observableFrom, Observable, Subject } from 'rxjs';
 
 import { merge } from 'rxjs/operators';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { AcEntity, AcLayerComponent, AcNotification, ActionType } from 'angular-cesium';
+import {AcEntity, AcLayerComponent, AcNotification, ActionType} from '../../../../../angular-cesium/src/lib/angular-cesium';
+
 
 @Component({
   selector: 'polygon-layer-example',

@@ -1,6 +1,7 @@
 import { Observable, of as observableOf } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
-import { AcNotification, ActionType, CesiumService } from 'angular-cesium';
+import {AcNotification, ActionType, CesiumService} from '../../../../../angular-cesium/src/lib/angular-cesium';
+
 
 @Component({
   selector: 'hippodrome-layer-example',

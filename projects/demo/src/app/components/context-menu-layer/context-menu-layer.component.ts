@@ -1,6 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { CesiumEvent, ContextMenuService, CoordinateConverter, MapEventsManagerService, PickOptions } from 'angular-cesium';
+
 import { ContextMenuData, MyCustomContextMenuComponent } from './context-menu/my-custom-context-menu.component';
+import {
+  CesiumEvent,
+  ContextMenuService,
+  CoordinateConverter,
+  MapEventsManagerService,
+  PickOptions
+} from '../../../../../angular-cesium/src/lib/angular-cesium';
 
 @Component({
   selector: 'context-menu-layer',

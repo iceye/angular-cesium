@@ -1,8 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs';
-import { AcLayerComponent, AcNotification, ActionType } from 'angular-cesium';
+
 import { MockDataProviderService } from '../../utils/services/dataProvider/mock-data-provider.service';
 import { map } from 'rxjs/operators';
+import {AcLayerComponent, AcNotification, ActionType} from '../../../../../angular-cesium/src/lib/angular-cesium';
 
 @Component({
   selector: 'ellipse-layer',

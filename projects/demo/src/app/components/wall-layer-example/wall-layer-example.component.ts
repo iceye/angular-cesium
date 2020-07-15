@@ -1,7 +1,8 @@
 import { from, Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
-import { AcNotification, ActionType } from 'angular-cesium';
+
 import { map } from 'rxjs/operators';
+import {AcNotification, ActionType} from '../../../../../angular-cesium/src/lib/angular-cesium';
 
 @Component({
   selector: 'wall-layer-example',

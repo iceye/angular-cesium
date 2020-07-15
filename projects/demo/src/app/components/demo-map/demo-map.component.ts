@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
-import { MapLayerProviderOptions, SceneMode, ViewerConfiguration } from 'angular-cesium';
 import { AppSettingsService } from '../../services/app-settings-service/app-settings-service';
+import {SceneMode, ViewerConfiguration} from '../../../../../angular-cesium/src/lib/angular-cesium';
 
 @Component({
   selector: 'demo-map',

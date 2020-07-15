@@ -1,18 +1,17 @@
 import { from as observableFrom, Observable } from 'rxjs';
 
 import { filter, map, tap } from 'rxjs/operators';
-import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
+
+import {Component, OnInit, Output, ViewChild} from '@angular/core';
 import {
   AcEntity,
-  AcLayerComponent,
-  AcNotification,
-  ActionType,
-  CameraService,
-  CesiumEvent,
-  CoordinateConverter,
+  AcLayerComponent, AcNotification,
+  ActionType, CameraService,
+  CesiumEvent, CoordinateConverter,
   MapEventsManagerService,
   PickOptions
-} from 'angular-cesium';
+} from '../../../../../angular-cesium/src/lib/angular-cesium';
+import * as EventEmitter from 'events';
 
 @Component({
   selector: 'map-events-example',

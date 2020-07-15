@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import {
-  CameraService,
-  CesiumService, EditActions, LabelProps,
-  MapEventsManagerService,
-  MapsManagerService,
-  PolylineEditUpdate,
-  RectangleEditorObservable, RectangleEditUpdate,
+  EditActions,
+  RectangleEditorObservable,
+  RectangleEditUpdate,
   RectanglesEditorService
-} from 'angular-cesium';
+} from '../../../../../../angular-cesium/src/lib/angular-cesium-widgets';
+import {
+  CameraService,
+  CesiumService,
+  MapEventsManagerService,
+  MapsManagerService
+} from '../../../../../../angular-cesium/src/lib/angular-cesium';
+
 
 @Component({
   selector: 'rectangle-editor-example',

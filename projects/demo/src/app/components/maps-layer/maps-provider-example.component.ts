@@ -1,6 +1,11 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
-import { AcMapLayerProviderComponent, MapLayerProviderOptions, MapTerrainProviderOptions } from 'angular-cesium';
+
 import { AppSettingsService } from '../../services/app-settings-service/app-settings-service';
+import {
+  AcMapLayerProviderComponent,
+  MapLayerProviderOptions,
+  MapTerrainProviderOptions
+} from '../../../../../angular-cesium/src/lib/angular-cesium';
 
 @Component({
   selector: 'maps-provider-example',

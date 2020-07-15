@@ -1,6 +1,13 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {
+  EllipseEditorObservable,
+  EllipseEditUpdate,
+  EllipsesEditorService,
+  LabelProps
+} from '../../../../../../angular-cesium/src/lib/angular-cesium-widgets';
+import {CoordinateConverter} from '../../../../../../angular-cesium/src/lib/angular-cesium';
 // tslint:disable-next-line:max-line-length
-import { CoordinateConverter, EllipseEditorObservable, EllipseEditUpdate, EllipsesEditorService, LabelProps } from 'angular-cesium';
+
 
 @Component({
   selector: 'ellipses-editor-example',

@@ -1,6 +1,7 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { Observable, Subscriber } from 'rxjs';
-import { AcLayerComponent, AcNotification, ActionType } from 'angular-cesium';
+import {AcLayerComponent, AcNotification, ActionType} from '../../../../../angular-cesium/src/lib/angular-cesium';
+
 
 @Component({
   selector: 'arc-layer-example',

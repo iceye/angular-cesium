@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { AcNotification, ActionType } from 'angular-cesium';
+
 import { map } from 'rxjs/operators';
 import { from, Observable } from 'rxjs';
+import {AcNotification, ActionType} from '../../../../../angular-cesium/src/lib/angular-cesium';
 
 @Component({
   selector: 'polyline-layer-example',

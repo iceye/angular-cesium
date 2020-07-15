@@ -1,12 +1,11 @@
 import { Injectable, Optional } from '@angular/core';
 import { CesiumService } from '../cesium/cesium.service';
-import * as geodesy from 'geodesy';
-import { hemisphere, LatLon, LatLonEllipsoidal, Utm } from 'geodesy';
 import { Cartesian3 } from '../../models/cartesian3';
+import {Utm} from 'geodesy/mgrs';
+import {LatLon} from 'geodesy/utm';
+type Hemisphere = 'N' | 'S';
 
-const LatLonVectors = geodesy['LatLonVectors']; // doesnt exists on typings
-
-window['geodesy'] = geodesy;
+const LatLonVectors = window['geodesy']['LatLonVectors']; // doesnt exists on typings
 
 /**
  *  Given different types of coordinates, we provide you a service converting those types to the most common other types.
@@ -81,11 +80,11 @@ export class CoordinateConverter {
   }
 
   degreesToUTM(longitude: number, latitude: number) {
-    return new LatLonEllipsoidal(latitude, longitude).toUtm();
+    return new LatLon(latitude, longitude).toUtm();
   }
 
-  UTMToDegrees(zone: number, hemisphereType: hemisphere, easting: number, northing: number) {
-    return this.geodesyToCesiumObject(new Utm(zone, hemisphereType, easting, northing).toLatLonE());
+  UTMToDegrees(zone: number, hemisphereType: Hemisphere , easting: number, northing: number) {
+    return this.geodesyToCesiumObject(new Utm(zone, hemisphereType, easting, northing).toLatLon());
   }
 
   private geodesyToCesiumObject(geodesyRadians: LatLon) {

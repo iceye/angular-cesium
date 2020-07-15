@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { AngularCesiumModule, AngularCesiumWidgetsModule } from 'angular-cesium';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { LabelLayerExampleComponent } from './components/label-layer-example/label-layer-example.component';
@@ -45,6 +44,8 @@ import { EllipsoidLayerExampleComponent } from './components/ellipsoid-layer-exa
 import { VolumeLayerExampleComponent } from './components/volume-layer-example/volume-layer-example.component';
 import { WallLayerExampleComponent } from './components/wall-layer-example/wall-layer-example.component';
 import { RectangleEditorExampleComponent } from './components/editor-layer/rectangle-editor-example/rectangle-editor-example.component';
+import {AngularCesiumWidgetsModule} from '../../../angular-cesium/src/lib/angular-cesium-widgets';
+import {AngularCesiumModule} from '../../../angular-cesium/src/lib/angular-cesium';
 
 
 @NgModule({

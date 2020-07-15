@@ -1,7 +1,14 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Observable, Subscriber } from 'rxjs';
+import {
+  AcEntity,
+  AcLayerComponent,
+  AcNotification,
+  ActionType,
+  MapsManagerService
+} from '../../../../../angular-cesium/src/lib/angular-cesium';
 
-import { AcEntity, AcLayerComponent, AcNotification, ActionType, MapsManagerService } from 'angular-cesium';
+
 
 @Component({
   selector: 'czml-layer-example',

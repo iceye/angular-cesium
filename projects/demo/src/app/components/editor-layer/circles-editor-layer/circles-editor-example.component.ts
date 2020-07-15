@@ -1,6 +1,12 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {
+  CircleEditorObservable,
+  CircleEditUpdate,
+  CirclesEditorService,
+  LabelProps
+} from '../../../../../../angular-cesium/src/lib/angular-cesium-widgets';
 // tslint:disable-next-line:max-line-length
-import { CircleEditorObservable, CircleEditUpdate, CirclesEditorService, LabelProps } from 'angular-cesium';
+
 
 @Component({
   selector: 'circles-editor-example',

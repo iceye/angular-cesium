@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { AcArcComponent, AcHtmlComponent, AcLabelComponent } from 'angular-cesium';
+import {AcArcComponent, AcHtmlComponent, AcLabelComponent} from '../../../../../angular-cesium/src/lib/angular-cesium';
+
 
 @Component({
   selector: 'single-entity-on-map-example',

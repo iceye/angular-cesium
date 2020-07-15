@@ -1,17 +1,14 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+
 import {
   CameraService,
-  CesiumEvent,
   CesiumService,
+  defaultLabelProps,
   EditActions,
   LabelProps,
-  MapEventsManagerService, MapsManagerService,
-  PickOptions,
-  PointEditorObservable,
-  PointEditUpdate,
-  PointsEditorService
-} from 'angular-cesium';
-import { defaultLabelProps } from 'projects/angular-cesium/src/public_api';
+  MapEventsManagerService,
+  MapsManagerService, PointEditorObservable, PointEditUpdate, PointsEditorService
+} from 'projects/angular-cesium/src/public_api';
 
 @Component({
   selector: 'points-editor-example',

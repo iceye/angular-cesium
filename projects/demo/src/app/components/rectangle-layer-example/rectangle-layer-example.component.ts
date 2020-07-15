@@ -1,6 +1,7 @@
 import { BehaviorSubject, Observable } from 'rxjs';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { AcEntity, AcLayerComponent, AcNotification, ActionType } from 'angular-cesium';
+import {AcEntity, AcLayerComponent, AcNotification, ActionType} from '../../../../../angular-cesium/src/lib/angular-cesium';
+
 
 @Component({
   selector: 'rectangle-layer-example',

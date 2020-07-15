@@ -2,7 +2,8 @@ import { Observable, range as observableRange } from 'rxjs';
 
 import { map } from 'rxjs/operators';
 import { Component, OnInit } from '@angular/core';
-import { AcEntity, AcNotification, ActionType } from 'angular-cesium';
+import {AcEntity, AcNotification, ActionType} from '../../../../../../angular-cesium/src/lib/angular-cesium';
+
 
 @Component({
   selector: 'polygon-performance-test',

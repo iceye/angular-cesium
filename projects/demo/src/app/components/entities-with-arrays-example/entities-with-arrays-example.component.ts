@@ -1,8 +1,15 @@
 import { map } from 'rxjs/operators';
 import { Component, Input, OnChanges, OnInit, SimpleChanges, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs';
-import { AcLayerComponent, AcNotification, ActionType, CesiumEvent, MapEventsManagerService, PickOptions } from 'angular-cesium';
+
 import { MockDataProviderService } from '../../utils/services/dataProvider/mock-data-provider.service';
+import {
+  AcLayerComponent, AcNotification,
+  ActionType,
+  CesiumEvent,
+  MapEventsManagerService,
+  PickOptions
+} from '../../../../../angular-cesium/src/lib/angular-cesium';
 
 @Component({
   selector: 'entities-with-arrays-example',

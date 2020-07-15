@@ -1,6 +1,12 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {
+  EditActions,
+  HippodromeEditorObservable, HippodromeEditorService,
+  HippodromeEditUpdate,
+  LabelProps
+} from '../../../../../../angular-cesium/src/lib/angular-cesium-widgets';
 // tslint:disable-next-line:max-line-length
-import { EditActions, HippodromeEditorObservable, HippodromeEditorService, HippodromeEditUpdate, LabelProps } from 'angular-cesium';
+
 
 @Component({
   selector: 'hippodrome-editor-example',

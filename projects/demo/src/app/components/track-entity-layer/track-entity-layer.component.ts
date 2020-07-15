@@ -1,17 +1,15 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
-import {
-  AcEntity,
-  AcLayerComponent,
-  AcNotification,
-  ActionType,
-  CameraService,
-  CesiumEvent,
-  MapEventsManagerService,
-  PickOptions,
-  SceneMode
-} from 'angular-cesium';
+
 import { BehaviorSubject } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import {
+  AcEntity,
+  AcLayerComponent, AcNotification,
+  ActionType, CameraService,
+  CesiumEvent,
+  MapEventsManagerService,
+  PickOptions, SceneMode
+} from '../../../../../angular-cesium/src/lib/angular-cesium';
 
 const initialLocation = {
   id: '1',

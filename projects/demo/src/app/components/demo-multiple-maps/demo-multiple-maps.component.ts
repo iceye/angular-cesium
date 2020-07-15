@@ -1,6 +1,13 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
-import { MapLayerProviderOptions, MapsManagerService, SceneMode, ViewerConfiguration, ZoomToRectangleService } from 'angular-cesium';
+
 import { AppSettingsService } from '../../services/app-settings-service/app-settings-service';
+import {ZoomToRectangleService} from '../../../../../angular-cesium/src/lib/angular-cesium-widgets';
+import {
+  MapLayerProviderOptions,
+  MapsManagerService,
+  SceneMode,
+  ViewerConfiguration
+} from '../../../../../angular-cesium/src/lib/angular-cesium';
 
 @Component({
   selector: 'demo-multiple-maps',

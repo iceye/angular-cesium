@@ -1,16 +1,17 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import {
-  CameraService,
-  CesiumEvent,
-  CesiumService,
   EditActions,
   LabelProps,
-  MapEventsManagerService, MapsManagerService,
-  PickOptions,
   PolylineEditorObservable,
-  PolylineEditUpdate,
-  PolylinesEditorService
-} from 'angular-cesium';
+  PolylineEditUpdate, PolylinesEditorService
+} from '../../../../../../angular-cesium/src/lib/angular-cesium-widgets';
+import {
+  CameraService,
+  CesiumService,
+  MapEventsManagerService,
+  MapsManagerService
+} from '../../../../../../angular-cesium/src/lib/angular-cesium';
+
 
 @Component({
   selector: 'polyline-editor-example',

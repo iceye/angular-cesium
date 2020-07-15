@@ -1,14 +1,13 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-// tslint:disable-next-line:max-line-length
 import {
-  CameraService,
-  CesiumService,
   EditActions,
-  LabelProps,
-  PolygonEditorObservable,
+  LabelProps, PolygonEditorObservable,
   PolygonEditUpdate,
   PolygonsEditorService
-} from 'angular-cesium';
+} from '../../../../../../angular-cesium/src/lib/angular-cesium-widgets';
+import {CameraService, CesiumService} from '../../../../../../angular-cesium/src/lib/angular-cesium';
+// tslint:disable-next-line:max-line-length
+
 
 @Component({
   selector: 'polygons-editor-example',

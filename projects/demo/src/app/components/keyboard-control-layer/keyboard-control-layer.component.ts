@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { KeyboardAction, KeyboardControlService } from 'angular-cesium';
+import {KeyboardAction, KeyboardControlService} from '../../../../../angular-cesium/src/lib/angular-cesium';
+
 
 @Component({
   selector: 'keyboard-control-layer',

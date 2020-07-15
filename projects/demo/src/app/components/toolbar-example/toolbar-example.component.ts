@@ -1,17 +1,13 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {
-  CameraService,
-  CesiumService,
   CirclesEditorService,
   EllipsesEditorService,
-  RectanglesEditorService,
-  HippodromeEditorService,
-  PointsEditorService,
-  PolygonsEditorService,
-  PolylineEditorObservable,
-  RangeAndBearingComponent,
+  HippodromeEditorService, PointsEditorService, PolygonsEditorService, PolylineEditorObservable,
+  RangeAndBearingComponent, RectanglesEditorService,
   ZoomToRectangleService
-} from 'angular-cesium';
+} from '../../../../../angular-cesium/src/lib/angular-cesium-widgets';
+import {CameraService, CesiumService} from '../../../../../angular-cesium/src/lib/angular-cesium';
+
 
 @Component({
   selector: 'toolbar-example',
