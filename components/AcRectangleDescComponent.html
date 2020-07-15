@@ -72,13 +72,17 @@ of Entity</p>
 <li><a href="https://cesiumjs.org/Cesium/Build/Documentation/RectangleGraphics.html">https://cesiumjs.org/Cesium/Build/Documentation/RectangleGraphics.html</a></li>
 </ul>
 <p><strong>Usage:</strong></p>
-<div><pre class="line-numbers"><code class="language-none"> *   &lt;ac-rectangle-desc props=&quot;{
- *     show : rectangle.show, //optional
- *     coordinates : rectangle.positions,
- *     material : rectangle.color  //optional
- *   }&quot;&gt;
- *   &lt;/ac-rectangle-desc&gt;
- *</code></pre></div>
+<p>```</p>
+<ul>
+<li>&lt;ac-rectangle-desc props=&quot;{</li>
+<li>show : rectangle.show, //optional</li>
+<li>coordinates : rectangle.positions,</li>
+<li>material : rectangle.color  //optional</li>
+<li>}&quot;&gt;</li>
+<li></ac-rectangle-desc></li>
+<li>```</li>
+</ul>
+
     </p>
 
     <p class="comment">
@@ -106,7 +110,7 @@ of Entity</p>
             <tr>
                 <td class="col-md-3">providers</td>
                 <td class="col-md-9">
-                            <code><a href="../interfaces/Rectangle.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcRectangleDescComponent) }</a></code>
+                                <code><a href="../components/AcRectangleDescComponent.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcRectangleDescComponent) }</a></code>
                 </td>
             </tr>
 
@@ -164,7 +168,7 @@ of Entity</p>
                                                         <td>drawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/RectangleDrawerService.html" target="_self" >RectangleDrawerService</a></code>
+                                                                        <code><a href="../injectables/RectangleDrawerService.html" target="_self" >RectangleDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -200,7 +204,7 @@ of Entity</p>
                                                         <td>cesiumProperties</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
+                                                                        <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -310,6 +314,7 @@ export class AcRectangleDescComponent extends BasicDesc {
 
 
 
+                   
 
 
 
@@ -332,6 +337,7 @@ export class AcRectangleDescComponent extends BasicDesc {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AcRectangleDescComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

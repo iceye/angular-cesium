@@ -72,14 +72,18 @@ The properties of props are the same as the properties of Entity and EllipseGrap
 <li><a href="https://cesiumjs.org/Cesium/Build/Documentation/EllipseGraphics.html">https://cesiumjs.org/Cesium/Build/Documentation/EllipseGraphics.html</a></li>
 </ul>
 <p><strong>Usage :</strong></p>
-<div><pre class="line-numbers"><code class="language-none"> *    &lt;ac-ellipse-desc props=&quot;{
- *      position: data.position,
- *      semiMajorAxis:250000.0,
- *      semiMinorAxis:400000.0,
- *      height: 0
- *    }&quot;&gt;
- *    &lt;/ac-ellipse-desc&gt;
- *</code></pre></div>
+<p>```</p>
+<ul>
+<li>&lt;ac-ellipse-desc props=&quot;{</li>
+<li>position: data.position,</li>
+<li>semiMajorAxis:250000.0,</li>
+<li>semiMinorAxis:400000.0,</li>
+<li>height: 0</li>
+<li>}&quot;&gt;</li>
+<li></ac-ellipse-desc></li>
+<li>```</li>
+</ul>
+
     </p>
 
     <p class="comment">
@@ -107,7 +111,7 @@ The properties of props are the same as the properties of Entity and EllipseGrap
             <tr>
                 <td class="col-md-3">providers</td>
                 <td class="col-md-9">
-                            <code><a href="../components/AcEllipseDescComponent.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcEllipseDescComponent) }</a></code>
+                                <code><a href="../components/AcEllipseDescComponent.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcEllipseDescComponent) }</a></code>
                 </td>
             </tr>
 
@@ -201,7 +205,7 @@ The properties of props are the same as the properties of Entity and EllipseGrap
                                                         <td>cesiumProperties</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
+                                                                        <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -311,6 +315,7 @@ export class AcEllipseDescComponent extends BasicDesc {
 
 
 
+                   
 
 
 
@@ -333,6 +338,7 @@ export class AcEllipseDescComponent extends BasicDesc {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AcEllipseDescComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

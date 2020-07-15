@@ -71,15 +71,19 @@ The properties of props are the same as the properties of Entity and BillboardGr
 <li><a href="https://cesiumjs.org/Cesium/Build/Documentation/BillboardGraphics.html">https://cesiumjs.org/Cesium/Build/Documentation/BillboardGraphics.html</a></li>
 </ul>
 <p><strong>Usage :</strong></p>
-<div><pre class="line-numbers"><code class="language-none"> *    &lt;ac-billboard-desc props=&quot;{
- *      image: track.image,
- *      position: track.position,
- *      scale: track.scale,
- *      color: track.color,
- *      name: track.name
- *    }&quot;&gt;
- *    &lt;/ac-billboard-desc&gt;
- *</code></pre></div>
+<p>```</p>
+<ul>
+<li>&lt;ac-billboard-desc props=&quot;{</li>
+<li>image: track.image,</li>
+<li>position: track.position,</li>
+<li>scale: track.scale,</li>
+<li>color: track.color,</li>
+<li>name: track.name</li>
+<li>}&quot;&gt;</li>
+<li></ac-billboard-desc></li>
+<li>```</li>
+</ul>
+
     </p>
 
     <p class="comment">
@@ -107,7 +111,7 @@ The properties of props are the same as the properties of Entity and BillboardGr
             <tr>
                 <td class="col-md-3">providers</td>
                 <td class="col-md-9">
-                            <code><a href="../components/AcBillboardDescComponent.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcBillboardDescComponent) }</a></code>
+                                <code><a href="../components/AcBillboardDescComponent.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcBillboardDescComponent) }</a></code>
                 </td>
             </tr>
 
@@ -201,7 +205,7 @@ The properties of props are the same as the properties of Entity and BillboardGr
                                                         <td>cesiumProperties</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
+                                                                        <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -313,6 +317,7 @@ export class AcBillboardDescComponent extends BasicDesc {
 
 
 
+                   
 
 
 
@@ -335,6 +340,7 @@ export class AcBillboardDescComponent extends BasicDesc {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AcBillboardDescComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

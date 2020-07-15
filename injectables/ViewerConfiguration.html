@@ -68,12 +68,17 @@
 defaulty angular-cesium doesnt provide this service and viewer is created with default options.
 In order set specific options you must set this service as provider in your component and
 set the wanted options.</p>
-<div><pre class="line-numbers"><code class="language-typescript"> * constructor(viewerConf :ViewerConfiguration ) {
- *   viewerConf.viewerOptions = { timeline: false };
- * }
- *</code></pre></div><p>notice this configuration will be for all <ac-maps> in your component.</p>
+<p>```typescript</p>
+<ul>
+<li>constructor(viewerConf :ViewerConfiguration ) {</li>
+<li>viewerConf.viewerOptions = { timeline: false };</li>
+<li>}</li>
+<li>```
+notice this configuration will be for all <ac-maps> in your component.</li>
+</ul>
 
             </p>
+
 
 
             <section>
@@ -157,87 +162,88 @@ set the wanted options.</p>
 
             <section>
     
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="getNextViewerModifier"></a>
-                        <span class="name">
-                            <b>
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getNextViewerModifier"></a>
+                    <span class="name">
+                        <b>
                             getNextViewerModifier
-                            </b>
-                            <a href="#getNextViewerModifier"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#getNextViewerModifier"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>getNextViewerModifier()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/viewer-configuration/viewer-configuration.service.ts:52</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/viewer-configuration/viewer-configuration.service.ts:52</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code>Function | []</code>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Function | []</code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="getNextViewerOptions"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getNextViewerOptions"></a>
+                    <span class="name">
+                        <b>
                             getNextViewerOptions
-                            </b>
-                            <a href="#getNextViewerOptions"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#getNextViewerOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>getNextViewerOptions()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/viewer-configuration/viewer-configuration.service.ts:31</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="31"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/viewer-configuration/viewer-configuration.service.ts:31</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code>object | []</code>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>object | []</code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
-
             <section>
     
         <h3 id="inputs">
@@ -251,16 +257,9 @@ set the wanted options.</p>
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            _viewerModifier
-                            </b>
+                            _viewerModifier</b>
                             <a href="#_viewerModifier"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>_viewerModifier:     <code>Function | Function[]</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -286,16 +285,9 @@ set the wanted options.</p>
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            _viewerOptions
-                            </b>
+                            _viewerOptions</b>
                             <a href="#_viewerOptions"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>_viewerOptions:     <code>object | object[]</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -326,16 +318,9 @@ set the wanted options.</p>
                         <a name="Ï"></a>
                         <span class="name">
                             <b>
-                            Ï
-                            </b>
+                            Ï</b>
                             <a href="#Ï"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>Ï:     <code></code>
-</code>
                     </td>
                 </tr>
                         <tr>
@@ -355,21 +340,14 @@ set the wanted options.</p>
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            nextViewerModifierIndex
-                            </b>
+                            nextViewerModifierIndex</b>
                             <a href="#nextViewerModifierIndex"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>nextViewerModifierIndex:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
 
                         </td>
                     </tr>
@@ -395,21 +373,14 @@ set the wanted options.</p>
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            nextViewerOptionsIndex
-                            </b>
+                            nextViewerOptionsIndex</b>
                             <a href="#nextViewerOptionsIndex"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>nextViewerOptionsIndex:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
 
                         </td>
                     </tr>
@@ -495,7 +466,7 @@ The map initialized first will be set with the first option object in the option
                                 <div>
                                 </div>
                                 <div class="io-description">
-                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
                                 </div>
                         </td>
@@ -564,7 +535,7 @@ The map initialized first will be set with the first option object in the option
                                 <div>
                                 </div>
                                 <div class="io-description">
-                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
                                 </div>
                         </td>
@@ -655,6 +626,7 @@ export class ViewerConfiguration {
 
 
 
+                   
 
 
 
@@ -677,6 +649,7 @@ export class ViewerConfiguration {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
             var COMPODOC_CURRENT_PAGE_URL = 'ViewerConfiguration.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

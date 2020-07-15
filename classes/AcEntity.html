@@ -69,12 +69,16 @@
             </p>
             <p class="comment">
                 <p>Angular Cesium parent entity, all entities should inherit from it.</p>
-<div><pre class="line-numbers"><code class="language-typescript"> * entity= new AcEntity({
- *      id: 0,
- *      name: &#39;click me&#39;,
- *      position: Cesium.Cartesian3.fromRadians(0.5, 0.5),
- * });
- *</code></pre></div>
+<p>```typescript</p>
+<ul>
+<li>entity= new AcEntity({</li>
+<li>id: 0,</li>
+<li>name: &#39;click me&#39;,</li>
+<li>position: Cesium.Cartesian3.fromRadians(0.5, 0.5),</li>
+<li>});</li>
+<li>```</li>
+</ul>
+
             </p>
 
 
@@ -144,7 +148,7 @@
                                                         <td>json</td>
                                                   
                                                         <td>
-                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                                        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -168,90 +172,90 @@
 
             <section>
     
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="create"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Static</span>
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="create"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Static</span>
                             create
-                            </b>
-                            <a href="#create"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>create(json?: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#create"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>create(json?: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/models/ac-entity.ts:18</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="18"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/models/ac-entity.ts:18</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
-                            <div class="io-description"><p>Creates entity from a json</p>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Creates entity from a json</p>
 </div>
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                                    <td>Description</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>json</td>
-                                                        <td>
-                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            Yes
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>json</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
 
-                                                        <td>
-                                                                <code><p>entity object</p>
-</code>
-                                                        </td>
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    <td>
+                                        Yes
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    <p>entity as AcEntity</p>
 
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                                    <td>
+                                        <p>entity object</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>entity as AcEntity</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
-
 
 
 
@@ -289,6 +293,7 @@
 
 
 
+                   
 
 
 
@@ -311,6 +316,7 @@
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
             var COMPODOC_CURRENT_PAGE_URL = 'AcEntity.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

@@ -67,20 +67,24 @@
 The element must be a child of ac-map element.
 An arc is not natively implemented in cesium.</p>
 <p><strong>Usage :</strong></p>
-<div><pre class="line-numbers"><code class="language-none"> *    &lt;ac-arc-desc geometryProps=&quot;{
- *          center: arc.center,
- *          angle: arc.angle,
- *          delta: arc.delta,
- *          radius: arc.radius
- *       }&quot;
- *       instanceProps=&quot;{
- *          attributes: arc.attributes
- *       }&quot;
- *       primitiveProps=&quot;{
- *          appearance: arc.appearance
- *       }&quot;&gt;
- *    &lt;/ac-arc-desc&gt;
- *</code></pre></div>
+<p>```</p>
+<ul>
+<li>&lt;ac-arc-desc geometryProps=&quot;{</li>
+<li>center: arc.center,</li>
+<li>angle: arc.angle,</li>
+<li>delta: arc.delta,</li>
+<li>radius: arc.radius</li>
+<li>}&quot;</li>
+<li>instanceProps=&quot;{</li>
+<li>attributes: arc.attributes</li>
+<li>}&quot;</li>
+<li>primitiveProps=&quot;{</li>
+<li>appearance: arc.appearance</li>
+<li>}&quot;&gt;</li>
+<li></ac-arc-desc></li>
+<li>```</li>
+</ul>
+
     </p>
 
     <p class="comment">
@@ -94,7 +98,7 @@ An arc is not natively implemented in cesium.</p>
         <h3>Implements</h3>
     </p>
     <p class="comment">
-                <code><a href="https://angular.io/api/core/OnChanges" target="_blank" >OnChanges</a></code>
+                    <code><a href="https://angular.io/api/core/OnChanges" target="_blank" >OnChanges</a></code>
     </p>
 
 
@@ -231,7 +235,7 @@ An arc is not natively implemented in cesium.</p>
                                                         <td>mapLayers</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/MapLayersService.html" target="_self" >MapLayersService</a></code>
+                                                                        <code><a href="../injectables/MapLayersService.html" target="_self" >MapLayersService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -253,15 +257,15 @@ An arc is not natively implemented in cesium.</p>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="geometryProps"></a>
-                        <code>geometryProps</code>
+                        <b>geometryProps</b>
                     </td>
-                    <td class="col-md-10">
-                            <p>
-                            <em>Type :</em>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
-                            </p>
                     </td>
                 </tr>
                         <tr>
@@ -274,15 +278,15 @@ An arc is not natively implemented in cesium.</p>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="instanceProps"></a>
-                        <code>instanceProps</code>
+                        <b>instanceProps</b>
                     </td>
-                    <td class="col-md-10">
-                            <p>
-                            <em>Type :</em>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
-                            </p>
                     </td>
                 </tr>
                         <tr>
@@ -295,15 +299,15 @@ An arc is not natively implemented in cesium.</p>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="primitiveProps"></a>
-                        <code>primitiveProps</code>
+                        <b>primitiveProps</b>
                     </td>
-                    <td class="col-md-10">
-                            <p>
-                            <em>Type :</em>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
-                            </p>
                     </td>
                 </tr>
                         <tr>
@@ -319,156 +323,158 @@ An arc is not natively implemented in cesium.</p>
 
     <section>
     
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="drawOnMap"></a>
-                        <span class="name">
-                            <b>
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="drawOnMap"></a>
+                    <span class="name">
+                        <b>
                             drawOnMap
-                            </b>
-                            <a href="#drawOnMap"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#drawOnMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>drawOnMap()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-arc/ac-arc.component.ts:53</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-arc/ac-arc.component.ts:53</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngOnChanges"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnChanges"></a>
+                    <span class="name">
+                        <b>
                             ngOnChanges
-                            </b>
-                            <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>ngOnChanges(changes: <a href="https://angular.io/api/core/SimpleChanges" target="_blank">SimpleChanges</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-arc/ac-arc.component.ts:58</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-arc/ac-arc.component.ts:58</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>changes</td>
-                                                        <td>
-                                                                    <code><a href="https://angular.io/api/core/SimpleChanges" target="_blank" >SimpleChanges</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>changes</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/core/SimpleChanges" target="_blank" >SimpleChanges</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="updateOnMap"></a>
-                        <span class="name">
-                            <b>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateOnMap"></a>
+                    <span class="name">
+                        <b>
                             updateOnMap
-                            </b>
-                            <a href="#updateOnMap"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#updateOnMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>updateOnMap()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-arc/ac-arc.component.ts:46</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="46"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-arc/ac-arc.component.ts:46</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
-
 
 </div>
 
@@ -588,6 +594,7 @@ export class AcArcComponent extends EntityOnMapComponent implements OnChanges {
 
 
 
+                   
 
 
 
@@ -610,6 +617,7 @@ export class AcArcComponent extends EntityOnMapComponent implements OnChanges {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AcArcComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

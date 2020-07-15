@@ -67,23 +67,35 @@
 The element must be a child of ac-layer element.
 An arc is not cesium natively implemented and therefore it&#39;s API doesn&#39;t appear anywhere</p>
 <p><strong>Usage :</strong></p>
-<div><pre class="line-numbers"><code class="language-none"> *    &lt;ac-arc-desc props=&quot;{
- *          center: arc.center,
- *          angle: arc.angle,
- *          delta: arc.delta,
- *          radius: arc.radius,
- *          color : arc.color - The color should be Cesium.Color type
- *    }&quot;&gt;
- *    &lt;/ac-arc-desc&gt;
- *</code></pre></div><p>   description of the props :
-   center - The arc is a section of an outline of a circle, This is the center of the circle
-   angle - the initial angle of the arc in radians
-   delta - the spreading of the arc,
-   radius - the distance from the center to the arc</p>
-<p>   for example :
-   angle - 0
-   delta - π</p>
-<p>   will draw an half circle</p>
+<p>```</p>
+<ul>
+<li><p>&lt;ac-arc-desc props=&quot;{</p>
+</li>
+<li><p>center: arc.center,</p>
+</li>
+<li><p>angle: arc.angle,</p>
+</li>
+<li><p>delta: arc.delta,</p>
+</li>
+<li><p>radius: arc.radius,</p>
+</li>
+<li><p>color : arc.color - The color should be Cesium.Color type</p>
+</li>
+<li><p>}&quot;&gt;</p>
+</li>
+<li></ac-arc-desc></li>
+<li><p>```</p>
+<p>description of the props :
+center - The arc is a section of an outline of a circle, This is the center of the circle
+angle - the initial angle of the arc in radians
+delta - the spreading of the arc,
+radius - the distance from the center to the arc</p>
+<p>for example :
+angle - 0
+delta - π</p>
+<p>will draw an half circle</p>
+</li>
+</ul>
 
     </p>
 
@@ -112,7 +124,7 @@ An arc is not cesium natively implemented and therefore it&#39;s API doesn&#39;t
             <tr>
                 <td class="col-md-3">providers</td>
                 <td class="col-md-9">
-                            <code><a href="../components/AcArcDescComponent.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcArcDescComponent) }</a></code>
+                                <code><a href="../components/AcArcDescComponent.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcArcDescComponent) }</a></code>
                 </td>
             </tr>
 
@@ -206,7 +218,7 @@ An arc is not cesium natively implemented and therefore it&#39;s API doesn&#39;t
                                                         <td>cesiumProperties</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
+                                                                        <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -329,6 +341,7 @@ export class AcArcDescComponent extends BasicDesc {
 
 
 
+                   
 
 
 
@@ -351,6 +364,7 @@ export class AcArcDescComponent extends BasicDesc {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AcArcDescComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

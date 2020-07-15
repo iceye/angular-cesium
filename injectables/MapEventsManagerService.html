@@ -68,14 +68,19 @@
 Provided by <code>&lt;ac-map/&gt;</code> component there for could be injected at any component under <code>&lt;ac-map/&gt;</code> hierarchy
 or from the <code>&lt;ac-map/&gt;</code> component reference <code>acMapComponent.getMapEventsManager()</code></p>
 <p><strong>usage:</strong></p>
-<div><pre class="line-numbers"><code class="language-none"> * MapEventsManagerService.register({event, modifier, priority, entityType, pickOption}).subscribe()
- *</code></pre></div><p><strong>param:</strong> {CesiumEvent} event
+<p>```</p>
+<ul>
+<li>MapEventsManagerService.register({event, modifier, priority, entityType, pickOption}).subscribe()</li>
+<li>```
+<strong>param:</strong> {CesiumEvent} event
 <strong>param:</strong> {CesiumEventModifier} modifier
 <strong>param:</strong> priority - the bigger the number the bigger the priority. default : 0.
 <strong>param:</strong> entityType - entity type class that you are interested like (Track). the class must extends AcEntity
-<strong>param:</strong> pickOption - self explained</p>
+<strong>param:</strong> pickOption - self explained</li>
+</ul>
 
             </p>
+
 
 
             <section>
@@ -188,7 +193,7 @@ or from the <code>&lt;ac-map/&gt;</code> component reference <code>acMapComponen
                                                         <td>cesiumService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CesiumService.html" target="_self" >CesiumService</a></code>
+                                                                        <code><a href="../injectables/CesiumService.html" target="_self" >CesiumService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -200,7 +205,7 @@ or from the <code>&lt;ac-map/&gt;</code> component reference <code>acMapComponen
                                                         <td>eventBuilder</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../miscellaneous/enumerations.html#CesiumEvent" target="_self" >CesiumEventBuilder</a></code>
+                                                                        <code><a href="../miscellaneous/enumerations.html#CesiumEvent" target="_self" >CesiumEventBuilder</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -212,7 +217,7 @@ or from the <code>&lt;ac-map/&gt;</code> component reference <code>acMapComponen
                                                         <td>plonterService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/PlonterService.html" target="_self" >PlonterService</a></code>
+                                                                        <code><a href="../injectables/PlonterService.html" target="_self" >PlonterService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -231,705 +236,713 @@ or from the <code>&lt;ac-map/&gt;</code> component reference <code>acMapComponen
 
             <section>
     
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="addEntities"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addEntities"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             addEntities
-                            </b>
-                            <a href="#addEntities"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>addEntities(picksAndMovement: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, entityType: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, pickOption: <a href="../undefineds/PickOptions.html">PickOptions</a>, pickFilter?: (undefined) => void)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#addEntities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addEntities(picksAndMovement: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, entityType: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, pickOption: <a href="../undefineds/PickOptions.html">PickOptions</a>, pickFilter?: (undefined) => void)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="254" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:254</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="254"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:254</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>picksAndMovement</td>
-                                                        <td>
-                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>picksAndMovement</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>entityType</td>
-                                                        <td>
-                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>pickOption</td>
-                                                        <td>
-                                                                    <code><a href="../miscellaneous/enumerations.html#PickOptions" target="_self" >PickOptions</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
 
-                                                </tr>
-                                                <tr>
-                                                        <td>pickFilter</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            Yes
-                                                    </td>
-                                                    
+                                </tr>
+                                <tr>
+                                    <td>entityType</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="../interfaces/EventResult.html" target="_self" >EventResult</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="createDragEvent"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+
+                                </tr>
+                                <tr>
+                                    <td>pickOption</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#PickOptions" target="_self" >PickOptions</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pickFilter</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/EventResult.html" target="_self" >EventResult</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createDragEvent"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             createDragEvent
-                            </b>
-                            <a href="#createDragEvent"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>createDragEvent(undefined: <a href="../interfaces/EventRegistrationInput.html">EventRegistrationInput</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#createDragEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createDragEvent(undefined: <a href="../interfaces/EventRegistrationInput.html">EventRegistrationInput</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="169" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:169</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="169"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:169</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>
-                                                                    <code><a href="../interfaces/EventRegistrationInput.html" target="_self" >EventRegistrationInput</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                                <code><a href="../interfaces/EventRegistrationInput.html" target="_self" >EventRegistrationInput</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="../interfaces/EventResult.html" target="_self" >Observable&lt;EventResult&gt;</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="createEventRegistration"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/EventResult.html" target="_self" >Observable&lt;EventResult&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createEventRegistration"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             createEventRegistration
-                            </b>
-                            <a href="#createEventRegistration"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>createEventRegistration(undefined: <a href="../interfaces/EventRegistrationInput.html">EventRegistrationInput</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#createEventRegistration"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createEventRegistration(undefined: <a href="../interfaces/EventRegistrationInput.html">EventRegistrationInput</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="129" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:129</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="129"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:129</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>
-                                                                    <code><a href="../interfaces/EventRegistrationInput.html" target="_self" >EventRegistrationInput</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                                <code><a href="../interfaces/EventRegistrationInput.html" target="_self" >EventRegistrationInput</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="../classes/Registration.html" target="_self" >Registration</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="disposeObservable"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Registration.html" target="_self" >Registration</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="disposeObservable"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             disposeObservable
-                            </b>
-                            <a href="#disposeObservable"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>disposeObservable(eventRegistration: <a href="../classes/Registration.html">Registration</a>, eventName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#disposeObservable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>disposeObservable(eventRegistration: <a href="../classes/Registration.html">Registration</a>, eventName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="104" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:104</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:104</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>eventRegistration</td>
-                                                        <td>
-                                                                    <code><a href="../classes/Registration.html" target="_self" >Registration</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>eventRegistration</td>
+                                    <td>
+                                                <code><a href="../classes/Registration.html" target="_self" >Registration</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>eventName</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="init"></a>
-                        <span class="name">
-                            <b>
+                                </tr>
+                                <tr>
+                                    <td>eventName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="init"></a>
+                    <span class="name">
+                        <b>
                             init
-                            </b>
-                            <a href="#init"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#init"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>init()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:64</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:64</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="plonter"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="plonter"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             plonter
-                            </b>
-                            <a href="#plonter"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>plonter(entitiesAndMovement: <a href="../interfaces/EventResult.html">EventResult</a>, pickOption: <a href="../undefineds/PickOptions.html">PickOptions</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#plonter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>plonter(entitiesAndMovement: <a href="../interfaces/EventResult.html">EventResult</a>, pickOption: <a href="../undefineds/PickOptions.html">PickOptions</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="282" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:282</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="282"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:282</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>entitiesAndMovement</td>
-                                                        <td>
-                                                                    <code><a href="../interfaces/EventResult.html" target="_self" >EventResult</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>entitiesAndMovement</td>
+                                    <td>
+                                                <code><a href="../interfaces/EventResult.html" target="_self" >EventResult</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>pickOption</td>
-                                                        <td>
-                                                                    <code><a href="../miscellaneous/enumerations.html#PickOptions" target="_self" >PickOptions</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="../interfaces/EventResult.html" target="_self" >Observable&lt;EventResult&gt;</a></code>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="register"></a>
-                        <span class="name">
-                            <b>
+                                </tr>
+                                <tr>
+                                    <td>pickOption</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#PickOptions" target="_self" >PickOptions</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/EventResult.html" target="_self" >Observable&lt;EventResult&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="register"></a>
+                    <span class="name">
+                        <b>
                             register
-                            </b>
-                            <a href="#register"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#register"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>register(input: <a href="../interfaces/EventRegistrationInput.html">EventRegistrationInput</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:75</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:75</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
-                            <div class="io-description"><p>Register to map event</p>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Register to map event</p>
 </div>
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                                    <td>Description</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>input</td>
-                                                        <td>
-                                                                    <code><a href="../interfaces/EventRegistrationInput.html" target="_self" >EventRegistrationInput</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>input</td>
+                                    <td>
+                                                <code><a href="../interfaces/EventRegistrationInput.html" target="_self" >EventRegistrationInput</a></code>
+                                    </td>
 
-                                                        <td>
-                                                                <code><p>Event Registration Input</p>
-</code>
-                                                        </td>
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="../interfaces/EventResult.html" target="_self" >DisposableObservable&lt;EventResult&gt;</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    <p>DisposableObservable<EventResult></p>
 
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="sortRegistrationsByPriority"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+                                    <td>
+                                        <p>Event Registration Input</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/EventResult.html" target="_self" >DisposableObservable&lt;EventResult&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>DisposableObservable<EventResult></p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortRegistrationsByPriority"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             sortRegistrationsByPriority
-                            </b>
-                            <a href="#sortRegistrationsByPriority"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>sortRegistrationsByPriority(eventName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#sortRegistrationsByPriority"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>sortRegistrationsByPriority(eventName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="114" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:114</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:114</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>eventName</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>eventName</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="triggerPick"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="triggerPick"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             triggerPick
-                            </b>
-                            <a href="#triggerPick"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>triggerPick(movement: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, pickOptions: <a href="../undefineds/PickOptions.html">PickOptions</a>, pickConfig: <a href="../interfaces/PickConfiguration.html">PickConfiguration</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#triggerPick"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>triggerPick(movement: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, pickOptions: <a href="../undefineds/PickOptions.html">PickOptions</a>, pickConfig: <a href="../interfaces/PickConfiguration.html">PickConfiguration</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="228" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:228</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="228"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/map-events-mananger/map-events-manager.ts:228</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>movement</td>
-                                                        <td>
-                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>movement</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>pickOptions</td>
-                                                        <td>
-                                                                    <code><a href="../miscellaneous/enumerations.html#PickOptions" target="_self" >PickOptions</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>pickConfig</td>
-                                                        <td>
-                                                                    <code><a href="../interfaces/PickConfiguration.html" target="_self" >PickConfiguration</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code>{ movement: any; cesiumEntities: any; }</code>
+                                </tr>
+                                <tr>
+                                    <td>pickOptions</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#PickOptions" target="_self" >PickOptions</a></code>
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pickConfig</td>
+                                    <td>
+                                                <code><a href="../interfaces/PickConfiguration.html" target="_self" >PickConfiguration</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ movement: any; cesiumEntities: any; }</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
-
             <section>
     
         <h3 id="inputs">
@@ -943,16 +956,9 @@ or from the <code>&lt;ac-map/&gt;</code> component reference <code>acMapComponen
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            eventRegistrations
-                            </b>
+                            eventRegistrations</b>
                             <a href="#eventRegistrations"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>eventRegistrations:     <code></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -977,21 +983,14 @@ or from the <code>&lt;ac-map/&gt;</code> component reference <code>acMapComponen
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            scene
-                            </b>
+                            scene</b>
                             <a href="#scene"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>scene:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                         </td>
                     </tr>
@@ -1310,6 +1309,7 @@ export class MapEventsManagerService {
 
 
 
+                   
 
 
 
@@ -1332,6 +1332,7 @@ export class MapEventsManagerService {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
             var COMPODOC_CURRENT_PAGE_URL = 'MapEventsManagerService.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

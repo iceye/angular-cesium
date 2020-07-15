@@ -76,26 +76,30 @@ The ac-layer element must be a child of ac-map element.</p>
 <li>debug <code>{boolean}</code> - prints every acNotification</li>
 </ul>
 <p><strong>Usage :</strong></p>
-<div><pre class="line-numbers"><code class="language-none"> *  &lt;ac-map&gt;
- *    &lt;ac-layer acFor=&quot;let track of tracks$&quot; [show]=&quot;show&quot; [context]=&quot;this&quot; [options]=&quot;options&quot; [zIndex]=&quot;1&quot;&gt;
- *      &lt;ac-billboard-desc props=&quot;{
- *        image: track.image,
- *        position: track.position,
- *        scale: track.scale,
- *        color: track.color,
- *        name: track.name
- *      }&quot;&gt;
- *      &lt;/ac-billboard-desc&gt;
- *        &lt;ac-label-desc props=&quot;{
- *          position: track.position,
- *          pixelOffset : [-15,20] | pixelOffset,
- *          text: track.name,
- *          font: &#39;15px sans-serif&#39;
- *        }&quot;&gt;
- *      &lt;/ac-label-desc&gt;
- *    &lt;/ac-layer&gt;
- *  &lt;/ac-map&gt;
- *</code></pre></div>
+<p>```</p>
+<ul>
+<li><ac-map></li>
+<li>&lt;ac-layer acFor=&quot;let track of tracks$&quot; [show]=&quot;show&quot; [context]=&quot;this&quot; [options]=&quot;options&quot; [zIndex]=&quot;1&quot;&gt;</li>
+<li>&lt;ac-billboard-desc props=&quot;{</li>
+<li>image: track.image,</li>
+<li>position: track.position,</li>
+<li>scale: track.scale,</li>
+<li>color: track.color,</li>
+<li>name: track.name</li>
+<li>}&quot;&gt;</li>
+<li></ac-billboard-desc></li>
+<li>&lt;ac-label-desc props=&quot;{</li>
+<li>position: track.position,</li>
+<li>pixelOffset : [-15,20] | pixelOffset,</li>
+<li>text: track.name,</li>
+<li>font: &#39;15px sans-serif&#39;</li>
+<li>}&quot;&gt;</li>
+<li></ac-label-desc></li>
+<li></ac-layer></li>
+<li></ac-map></li>
+<li>```</li>
+</ul>
+
     </p>
 
 
@@ -103,10 +107,10 @@ The ac-layer element must be a child of ac-map element.</p>
         <h3>Implements</h3>
     </p>
     <p class="comment">
-                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
-                <code><a href="https://angular.io/api/core/OnChanges" target="_blank" >OnChanges</a></code>
-                <code><a href="https://angular.io/api/core/AfterContentInit" target="_blank" >AfterContentInit</a></code>
-                <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnChanges" target="_blank" >OnChanges</a></code>
+                    <code><a href="https://angular.io/api/core/AfterContentInit" target="_blank" >AfterContentInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
     </p>
 
 
@@ -135,30 +139,30 @@ The ac-layer element must be a child of ac-map element.</p>
                             <code>BillboardDrawerService</code>
                             <code>LabelDrawerService</code>
                             <code>EllipseDrawerService</code>
-                            <code><a href="../injectables/PolylineDrawerService.html" target="_self" >PolylineDrawerService</a></code>
+                                <code><a href="../injectables/PolylineDrawerService.html" target="_self" >PolylineDrawerService</a></code>
                             <code>ArcDrawerService</code>
                             <code>PointDrawerService</code>
                             <code>PolygonDrawerService</code>
-                            <code><a href="../injectables/ModelDrawerService.html" target="_self" >ModelDrawerService</a></code>
-                            <code><a href="../injectables/BoxDrawerService.html" target="_self" >BoxDrawerService</a></code>
-                            <code><a href="../injectables/CorridorDrawerService.html" target="_self" >CorridorDrawerService</a></code>
-                            <code><a href="../injectables/CylinderDrawerService.html" target="_self" >CylinderDrawerService</a></code>
-                            <code><a href="../injectables/EllipsoidDrawerService.html" target="_self" >EllipsoidDrawerService</a></code>
-                            <code><a href="../injectables/PolylineVolumeDrawerService.html" target="_self" >PolylineVolumeDrawerService</a></code>
-                            <code><a href="../injectables/WallDrawerService.html" target="_self" >WallDrawerService</a></code>
-                            <code><a href="../injectables/RectangleDrawerService.html" target="_self" >RectangleDrawerService</a></code>
-                            <code><a href="../injectables/PolylinePrimitiveDrawerService.html" target="_self" >PolylinePrimitiveDrawerService</a></code>
-                            <code><a href="../injectables/LabelPrimitiveDrawerService.html" target="_self" >LabelPrimitiveDrawerService</a></code>
-                            <code><a href="../injectables/BillboardPrimitiveDrawerService.html" target="_self" >BillboardPrimitiveDrawerService</a></code>
-                            <code><a href="../injectables/PointPrimitiveDrawerService.html" target="_self" >PointPrimitiveDrawerService</a></code>
-                            <code><a href="../injectables/HtmlDrawerService.html" target="_self" >HtmlDrawerService</a></code>
-                            <code><a href="../injectables/CzmlDrawerService.html" target="_self" >CzmlDrawerService</a></code>
-                            <code><a href="../injectables/DynamicEllipseDrawerService.html" target="_self" >DynamicEllipseDrawerService</a></code>
-                            <code><a href="../injectables/PolylineDrawerService.html" target="_self" >DynamicPolylineDrawerService</a></code>
-                            <code><a href="../injectables/StaticCircleDrawerService.html" target="_self" >StaticCircleDrawerService</a></code>
-                            <code><a href="../injectables/StaticPolylineDrawerService.html" target="_self" >StaticPolylineDrawerService</a></code>
-                            <code><a href="../injectables/StaticPolygonDrawerService.html" target="_self" >StaticPolygonDrawerService</a></code>
-                            <code><a href="../injectables/StaticEllipseDrawerService.html" target="_self" >StaticEllipseDrawerService</a></code>
+                                <code><a href="../injectables/ModelDrawerService.html" target="_self" >ModelDrawerService</a></code>
+                                <code><a href="../injectables/BoxDrawerService.html" target="_self" >BoxDrawerService</a></code>
+                                <code><a href="../injectables/CorridorDrawerService.html" target="_self" >CorridorDrawerService</a></code>
+                                <code><a href="../injectables/CylinderDrawerService.html" target="_self" >CylinderDrawerService</a></code>
+                                <code><a href="../injectables/EllipsoidDrawerService.html" target="_self" >EllipsoidDrawerService</a></code>
+                                <code><a href="../injectables/PolylineVolumeDrawerService.html" target="_self" >PolylineVolumeDrawerService</a></code>
+                                <code><a href="../injectables/WallDrawerService.html" target="_self" >WallDrawerService</a></code>
+                                <code><a href="../injectables/RectangleDrawerService.html" target="_self" >RectangleDrawerService</a></code>
+                                <code><a href="../injectables/PolylinePrimitiveDrawerService.html" target="_self" >PolylinePrimitiveDrawerService</a></code>
+                                <code><a href="../injectables/LabelPrimitiveDrawerService.html" target="_self" >LabelPrimitiveDrawerService</a></code>
+                                <code><a href="../injectables/BillboardPrimitiveDrawerService.html" target="_self" >BillboardPrimitiveDrawerService</a></code>
+                                <code><a href="../injectables/PointPrimitiveDrawerService.html" target="_self" >PointPrimitiveDrawerService</a></code>
+                                <code><a href="../injectables/HtmlDrawerService.html" target="_self" >HtmlDrawerService</a></code>
+                                <code><a href="../injectables/CzmlDrawerService.html" target="_self" >CzmlDrawerService</a></code>
+                                <code><a href="../injectables/DynamicEllipseDrawerService.html" target="_self" >DynamicEllipseDrawerService</a></code>
+                                <code><a href="../injectables/DynamicPolylineDrawerService.html" target="_self" >DynamicPolylineDrawerService</a></code>
+                                <code><a href="../injectables/StaticCircleDrawerService.html" target="_self" >StaticCircleDrawerService</a></code>
+                                <code><a href="../injectables/StaticPolylineDrawerService.html" target="_self" >StaticPolylineDrawerService</a></code>
+                                <code><a href="../injectables/StaticPolygonDrawerService.html" target="_self" >StaticPolygonDrawerService</a></code>
+                                <code><a href="../injectables/StaticEllipseDrawerService.html" target="_self" >StaticEllipseDrawerService</a></code>
                 </td>
             </tr>
 
@@ -348,7 +352,7 @@ The ac-layer element must be a child of ac-map element.</p>
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(layerService: LayerService, _computationCache: ComputationCache, mapLayersService: <a href="../injectables/MapLayersService.html">MapLayersService</a>, billboardDrawerService: BillboardDrawerService, labelDrawerService: LabelDrawerService, ellipseDrawerService: EllipseDrawerService, polylineDrawerService: <a href="../injectables/PolylineDrawerService.html">PolylineDrawerService</a>, polygonDrawerService: PolygonDrawerService, arcDrawerService: ArcDrawerService, pointDrawerService: PointDrawerService, modelDrawerService: <a href="../injectables/ModelDrawerService.html">ModelDrawerService</a>, boxDrawerService: <a href="../injectables/BoxDrawerService.html">BoxDrawerService</a>, corridorDrawerService: <a href="../injectables/CorridorDrawerService.html">CorridorDrawerService</a>, cylinderDrawerService: <a href="../injectables/CylinderDrawerService.html">CylinderDrawerService</a>, ellipsoidDrawerSerice: <a href="../injectables/EllipsoidDrawerService.html">EllipsoidDrawerService</a>, polylineVolumeDrawerService: <a href="../injectables/PolylineVolumeDrawerService.html">PolylineVolumeDrawerService</a>, wallDrawerService: <a href="../injectables/WallDrawerService.html">WallDrawerService</a>, rectangleDrawerService: <a href="../injectables/RectangleDrawerService.html">RectangleDrawerService</a>, dynamicEllipseDrawerService: <a href="../injectables/DynamicEllipseDrawerService.html">DynamicEllipseDrawerService</a>, dynamicPolylineDrawerService: <a href="../injectables/PolylineDrawerService.html">DynamicPolylineDrawerService</a>, staticCircleDrawerService: <a href="../injectables/StaticCircleDrawerService.html">StaticCircleDrawerService</a>, staticPolylineDrawerService: <a href="../injectables/StaticPolylineDrawerService.html">StaticPolylineDrawerService</a>, staticPolygonDrawerService: <a href="../injectables/StaticPolygonDrawerService.html">StaticPolygonDrawerService</a>, staticEllipseDrawerService: <a href="../injectables/StaticEllipseDrawerService.html">StaticEllipseDrawerService</a>, polylinePrimitiveDrawerService: <a href="../injectables/PolylinePrimitiveDrawerService.html">PolylinePrimitiveDrawerService</a>, labelPrimitiveDrawerService: <a href="../injectables/LabelPrimitiveDrawerService.html">LabelPrimitiveDrawerService</a>, billboardPrimitiveDrawerService: <a href="../injectables/BillboardPrimitiveDrawerService.html">BillboardPrimitiveDrawerService</a>, pointPrimitiveDrawerService: <a href="../injectables/PointPrimitiveDrawerService.html">PointPrimitiveDrawerService</a>, htmlDrawerService: <a href="../injectables/HtmlDrawerService.html">HtmlDrawerService</a>, czmlDrawerService: <a href="../injectables/CzmlDrawerService.html">CzmlDrawerService</a>)</code>
+<code>constructor(layerService: LayerService, _computationCache: ComputationCache, mapLayersService: <a href="../injectables/MapLayersService.html">MapLayersService</a>, billboardDrawerService: BillboardDrawerService, labelDrawerService: LabelDrawerService, ellipseDrawerService: EllipseDrawerService, polylineDrawerService: <a href="../injectables/PolylineDrawerService.html">PolylineDrawerService</a>, polygonDrawerService: PolygonDrawerService, arcDrawerService: ArcDrawerService, pointDrawerService: PointDrawerService, modelDrawerService: <a href="../injectables/ModelDrawerService.html">ModelDrawerService</a>, boxDrawerService: <a href="../injectables/BoxDrawerService.html">BoxDrawerService</a>, corridorDrawerService: <a href="../injectables/CorridorDrawerService.html">CorridorDrawerService</a>, cylinderDrawerService: <a href="../injectables/CylinderDrawerService.html">CylinderDrawerService</a>, ellipsoidDrawerSerice: <a href="../injectables/EllipsoidDrawerService.html">EllipsoidDrawerService</a>, polylineVolumeDrawerService: <a href="../injectables/PolylineVolumeDrawerService.html">PolylineVolumeDrawerService</a>, wallDrawerService: <a href="../injectables/WallDrawerService.html">WallDrawerService</a>, rectangleDrawerService: <a href="../injectables/RectangleDrawerService.html">RectangleDrawerService</a>, dynamicEllipseDrawerService: <a href="../injectables/DynamicEllipseDrawerService.html">DynamicEllipseDrawerService</a>, dynamicPolylineDrawerService: <a href="../injectables/DynamicPolylineDrawerService.html">DynamicPolylineDrawerService</a>, staticCircleDrawerService: <a href="../injectables/StaticCircleDrawerService.html">StaticCircleDrawerService</a>, staticPolylineDrawerService: <a href="../injectables/StaticPolylineDrawerService.html">StaticPolylineDrawerService</a>, staticPolygonDrawerService: <a href="../injectables/StaticPolygonDrawerService.html">StaticPolygonDrawerService</a>, staticEllipseDrawerService: <a href="../injectables/StaticEllipseDrawerService.html">StaticEllipseDrawerService</a>, polylinePrimitiveDrawerService: <a href="../injectables/PolylinePrimitiveDrawerService.html">PolylinePrimitiveDrawerService</a>, labelPrimitiveDrawerService: <a href="../injectables/LabelPrimitiveDrawerService.html">LabelPrimitiveDrawerService</a>, billboardPrimitiveDrawerService: <a href="../injectables/BillboardPrimitiveDrawerService.html">BillboardPrimitiveDrawerService</a>, pointPrimitiveDrawerService: <a href="../injectables/PointPrimitiveDrawerService.html">PointPrimitiveDrawerService</a>, htmlDrawerService: <a href="../injectables/HtmlDrawerService.html">HtmlDrawerService</a>, czmlDrawerService: <a href="../injectables/CzmlDrawerService.html">CzmlDrawerService</a>)</code>
                     </td>
                 </tr>
                         <tr>
@@ -398,7 +402,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>mapLayersService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/MapLayersService.html" target="_self" >MapLayersService</a></code>
+                                                                        <code><a href="../injectables/MapLayersService.html" target="_self" >MapLayersService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -446,7 +450,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>polylineDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/PolylineDrawerService.html" target="_self" >PolylineDrawerService</a></code>
+                                                                        <code><a href="../injectables/PolylineDrawerService.html" target="_self" >PolylineDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -494,7 +498,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>modelDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/ModelDrawerService.html" target="_self" >ModelDrawerService</a></code>
+                                                                        <code><a href="../injectables/ModelDrawerService.html" target="_self" >ModelDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -506,7 +510,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>boxDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/BoxDrawerService.html" target="_self" >BoxDrawerService</a></code>
+                                                                        <code><a href="../injectables/BoxDrawerService.html" target="_self" >BoxDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -518,7 +522,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>corridorDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CorridorDrawerService.html" target="_self" >CorridorDrawerService</a></code>
+                                                                        <code><a href="../injectables/CorridorDrawerService.html" target="_self" >CorridorDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -530,7 +534,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>cylinderDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CylinderDrawerService.html" target="_self" >CylinderDrawerService</a></code>
+                                                                        <code><a href="../injectables/CylinderDrawerService.html" target="_self" >CylinderDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -542,7 +546,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>ellipsoidDrawerSerice</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/EllipsoidDrawerService.html" target="_self" >EllipsoidDrawerService</a></code>
+                                                                        <code><a href="../injectables/EllipsoidDrawerService.html" target="_self" >EllipsoidDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -554,7 +558,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>polylineVolumeDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/PolylineVolumeDrawerService.html" target="_self" >PolylineVolumeDrawerService</a></code>
+                                                                        <code><a href="../injectables/PolylineVolumeDrawerService.html" target="_self" >PolylineVolumeDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -566,7 +570,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>wallDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/WallDrawerService.html" target="_self" >WallDrawerService</a></code>
+                                                                        <code><a href="../injectables/WallDrawerService.html" target="_self" >WallDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -578,7 +582,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>rectangleDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/RectangleDrawerService.html" target="_self" >RectangleDrawerService</a></code>
+                                                                        <code><a href="../injectables/RectangleDrawerService.html" target="_self" >RectangleDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -590,7 +594,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>dynamicEllipseDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/DynamicEllipseDrawerService.html" target="_self" >DynamicEllipseDrawerService</a></code>
+                                                                        <code><a href="../injectables/DynamicEllipseDrawerService.html" target="_self" >DynamicEllipseDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -602,7 +606,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>dynamicPolylineDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/PolylineDrawerService.html" target="_self" >DynamicPolylineDrawerService</a></code>
+                                                                        <code><a href="../injectables/DynamicPolylineDrawerService.html" target="_self" >DynamicPolylineDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -614,7 +618,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>staticCircleDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/StaticCircleDrawerService.html" target="_self" >StaticCircleDrawerService</a></code>
+                                                                        <code><a href="../injectables/StaticCircleDrawerService.html" target="_self" >StaticCircleDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -626,7 +630,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>staticPolylineDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/StaticPolylineDrawerService.html" target="_self" >StaticPolylineDrawerService</a></code>
+                                                                        <code><a href="../injectables/StaticPolylineDrawerService.html" target="_self" >StaticPolylineDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -638,7 +642,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>staticPolygonDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/StaticPolygonDrawerService.html" target="_self" >StaticPolygonDrawerService</a></code>
+                                                                        <code><a href="../injectables/StaticPolygonDrawerService.html" target="_self" >StaticPolygonDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -650,7 +654,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>staticEllipseDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/StaticEllipseDrawerService.html" target="_self" >StaticEllipseDrawerService</a></code>
+                                                                        <code><a href="../injectables/StaticEllipseDrawerService.html" target="_self" >StaticEllipseDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -662,7 +666,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>polylinePrimitiveDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/PolylinePrimitiveDrawerService.html" target="_self" >PolylinePrimitiveDrawerService</a></code>
+                                                                        <code><a href="../injectables/PolylinePrimitiveDrawerService.html" target="_self" >PolylinePrimitiveDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -674,7 +678,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>labelPrimitiveDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/LabelPrimitiveDrawerService.html" target="_self" >LabelPrimitiveDrawerService</a></code>
+                                                                        <code><a href="../injectables/LabelPrimitiveDrawerService.html" target="_self" >LabelPrimitiveDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -686,7 +690,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>billboardPrimitiveDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/BillboardPrimitiveDrawerService.html" target="_self" >BillboardPrimitiveDrawerService</a></code>
+                                                                        <code><a href="../injectables/BillboardPrimitiveDrawerService.html" target="_self" >BillboardPrimitiveDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -698,7 +702,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>pointPrimitiveDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/PointPrimitiveDrawerService.html" target="_self" >PointPrimitiveDrawerService</a></code>
+                                                                        <code><a href="../injectables/PointPrimitiveDrawerService.html" target="_self" >PointPrimitiveDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -710,7 +714,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>htmlDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/HtmlDrawerService.html" target="_self" >HtmlDrawerService</a></code>
+                                                                        <code><a href="../injectables/HtmlDrawerService.html" target="_self" >HtmlDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -722,7 +726,7 @@ The ac-layer element must be a child of ac-map element.</p>
                                                         <td>czmlDrawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CzmlDrawerService.html" target="_self" >CzmlDrawerService</a></code>
+                                                                        <code><a href="../injectables/CzmlDrawerService.html" target="_self" >CzmlDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -744,15 +748,15 @@ The ac-layer element must be a child of ac-map element.</p>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="acFor"></a>
-                        <code>acFor</code>
+                        <b>acFor</b>
                     </td>
-                    <td class="col-md-10">
-                            <p>
-                            <em>Type :</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
 
-                            </p>
                     </td>
                 </tr>
                         <tr>
@@ -765,15 +769,15 @@ The ac-layer element must be a child of ac-map element.</p>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="context"></a>
-                        <code>context</code>
+                        <b>context</b>
                     </td>
-                    <td class="col-md-10">
-                            <p>
-                            <em>Type :</em>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
-                            </p>
                     </td>
                 </tr>
                         <tr>
@@ -786,14 +790,14 @@ The ac-layer element must be a child of ac-map element.</p>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="debug"></a>
-                        <code>debug</code>
+                        <b>debug</b>
                     </td>
-                    <td class="col-md-10">
-                        <p>
-                            <em>Default value : </em><code>false</code>
-                        </p>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
                     </td>
                 </tr>
                         <tr>
@@ -806,15 +810,15 @@ The ac-layer element must be a child of ac-map element.</p>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="options"></a>
-                        <code>options</code>
+                        <b>options</b>
                     </td>
-                    <td class="col-md-10">
-                            <p>
-                            <em>Type :</em>    <code><a href="../interfaces/LayerOptions.html" target="_self" >LayerOptions</a></code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/LayerOptions.html" target="_self" >LayerOptions</a></code>
 
-                            </p>
                     </td>
                 </tr>
                         <tr>
@@ -827,14 +831,14 @@ The ac-layer element must be a child of ac-map element.</p>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="show"></a>
-                        <code>show</code>
+                        <b>show</b>
                     </td>
-                    <td class="col-md-10">
-                        <p>
-                            <em>Default value : </em><code>true</code>
-                        </p>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
                     </td>
                 </tr>
                         <tr>
@@ -847,14 +851,14 @@ The ac-layer element must be a child of ac-map element.</p>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="store"></a>
-                        <code>store</code>
+                        <b>store</b>
                     </td>
-                    <td class="col-md-10">
-                        <p>
-                            <em>Default value : </em><code>false</code>
-                        </p>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
                     </td>
                 </tr>
                         <tr>
@@ -867,14 +871,14 @@ The ac-layer element must be a child of ac-map element.</p>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="zIndex"></a>
-                        <code>zIndex</code>
+                        <b>zIndex</b>
                     </td>
-                    <td class="col-md-10">
-                        <p>
-                            <em>Default value : </em><code>0</code>
-                        </p>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
                     </td>
                 </tr>
                         <tr>
@@ -890,947 +894,963 @@ The ac-layer element must be a child of ac-map element.</p>
 
     <section>
     
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="getDrawerDataSourcesByName"></a>
-                        <span class="name">
-                            <b>
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDrawerDataSourcesByName"></a>
+                    <span class="name">
+                        <b>
                             getDrawerDataSourcesByName
-                            </b>
-                            <a href="#getDrawerDataSourcesByName"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#getDrawerDataSourcesByName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>getDrawerDataSourcesByName(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="336" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:336</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="336"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:336</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
-                            <div class="io-description"><p>Returns an Array of DataSources of the drawer with the provided DataSource.name
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Returns an Array of DataSources of the drawer with the provided DataSource.name
 Example: getDataSourceOfDrawer(&#39;polyline&#39;) returns the dataSource of polyline drawer</p>
 </div>
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>name</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code>any[]</code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    <p>Array of Cesium.DataSources</p>
 
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="getLayerDrawerDataSources"></a>
-                        <span class="name">
-                            <b>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>any[]</code>
+
+                    </div>
+                    <div class="io-description">
+                        <p>Array of Cesium.DataSources</p>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLayerDrawerDataSources"></a>
+                    <span class="name">
+                        <b>
                             getLayerDrawerDataSources
-                            </b>
-                            <a href="#getLayerDrawerDataSources"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#getLayerDrawerDataSources"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>getLayerDrawerDataSources()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="327" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:327</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="327"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:327</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
-                            <div class="io-description"><p>Returns an array of DataSources registered by a drawer of this layer</p>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Returns an array of DataSources registered by a drawer of this layer</p>
 </div>
 
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code>any[]</code>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>any[]</code>
 
-                            </div>
-                                <div class="io-description">
-                                    <p>Array of Cesium.DataSources</p>
+                    </div>
+                    <div class="io-description">
+                        <p>Array of Cesium.DataSources</p>
 
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="getLayerService"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLayerService"></a>
+                    <span class="name">
+                        <b>
                             getLayerService
-                            </b>
-                            <a href="#getLayerService"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#getLayerService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>getLayerService()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="319" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:319</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="319"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:319</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code>LayerService</code>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>LayerService</code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="getStore"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getStore"></a>
+                    <span class="name">
+                        <b>
                             getStore
-                            </b>
-                            <a href="#getStore"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#getStore"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>getStore()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="343" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:343</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="343"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:343</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
-                            <div class="io-description"><p>Returns the store.</p>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Returns the store.</p>
 </div>
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code>Map&lt;string, any&gt;</code>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Map&lt;string, any&gt;</code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="init"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="init"></a>
+                    <span class="name">
+                        <b>
                             init
-                            </b>
-                            <a href="#init"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#init"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>init()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="204" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:204</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="204"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:204</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="initValidParams"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initValidParams"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             initValidParams
-                            </b>
-                            <a href="#initValidParams"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>initValidParams()</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#initValidParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initValidParams()</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="251" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:251</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="251"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:251</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="isObservable"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isObservable"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             isObservable
-                            </b>
-                            <a href="#isObservable"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>isObservable(obj: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#isObservable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isObservable(obj: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="271" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:271</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="271"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:271</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
-                            <div class="io-description"><p>Test for a rxjs Observable </p>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Test for a rxjs Observable </p>
 </div>
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>obj</td>
-                                                        <td>
-                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>obj</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngAfterContentInit"></a>
-                        <span class="name">
-                            <b>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngAfterContentInit"></a>
+                    <span class="name">
+                        <b>
                             ngAfterContentInit
-                            </b>
-                            <a href="#ngAfterContentInit"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#ngAfterContentInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>ngAfterContentInit()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="277" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:277</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="277"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:277</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngOnChanges"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnChanges"></a>
+                    <span class="name">
+                        <b>
                             ngOnChanges
-                            </b>
-                            <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>ngOnChanges(changes: <a href="https://angular.io/api/core/SimpleChanges" target="_blank">SimpleChanges</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="299" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:299</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="299"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:299</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>changes</td>
-                                                        <td>
-                                                                    <code><a href="https://angular.io/api/core/SimpleChanges" target="_blank" >SimpleChanges</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>changes</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/core/SimpleChanges" target="_blank" >SimpleChanges</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngOnDestroy"></a>
-                        <span class="name">
-                            <b>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
                             ngOnDestroy
-                            </b>
-                            <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>ngOnDestroy()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="313" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:313</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="313"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:313</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngOnInit"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
                             ngOnInit
-                            </b>
-                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>ngOnInit()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="281" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:281</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="281"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:281</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="refreshAll"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="refreshAll"></a>
+                    <span class="name">
+                        <b>
                             refreshAll
-                            </b>
-                            <a href="#refreshAll"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#refreshAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>refreshAll(collection: AcNotification[])</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="377" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:377</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="377"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:377</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>collection</td>
-                                                        <td>
-                                                                    <code>AcNotification[]</code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>collection</td>
+                                    <td>
+                                            <code>AcNotification[]</code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="remove"></a>
-                        <span class="name">
-                            <b>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="remove"></a>
+                    <span class="name">
+                        <b>
                             remove
-                            </b>
-                            <a href="#remove"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#remove"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>remove(entityId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="358" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:358</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="358"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:358</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
-                            <div class="io-description"><p>remove entity from the layer</p>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>remove entity from the layer</p>
 </div>
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>entityId</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>entityId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="removeAll"></a>
-                        <span class="name">
-                            <b>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeAll"></a>
+                    <span class="name">
+                        <b>
                             removeAll
-                            </b>
-                            <a href="#removeAll"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#removeAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>removeAll()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="350" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:350</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="350"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:350</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
-                            <div class="io-description"><p>Remove all the entities from the layer.</p>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Remove all the entities from the layer.</p>
 </div>
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="update"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="update"></a>
+                    <span class="name">
+                        <b>
                             update
-                            </b>
-                            <a href="#update"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#update"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>update(entity: <a href="../classes/AcEntity.html">AcEntity</a>, id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="373" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:373</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="373"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:373</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
-                            <div class="io-description"><p>add/update entity to/from the layer</p>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>add/update entity to/from the layer</p>
 </div>
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>entity</td>
-                                                        <td>
-                                                                    <code><a href="../classes/AcEntity.html" target="_self" >AcEntity</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>entity</td>
+                                    <td>
+                                                <code><a href="../classes/AcEntity.html" target="_self" >AcEntity</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>id</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="updateNotification"></a>
-                        <span class="name">
-                            <b>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateNotification"></a>
+                    <span class="name">
+                        <b>
                             updateNotification
-                            </b>
-                            <a href="#updateNotification"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#updateNotification"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>updateNotification(notification: AcNotification)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="366" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:366</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="366"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:366</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
-                            <div class="io-description"><p>add/update entity to/from the layer</p>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>add/update entity to/from the layer</p>
 </div>
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>notification</td>
-                                                        <td>
-                                                                    <code>AcNotification</code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>notification</td>
+                                    <td>
+                                            <code>AcNotification</code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="updateStore"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateStore"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             updateStore
-                            </b>
-                            <a href="#updateStore"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>updateStore(notification: AcNotification)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#updateStore"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateStore(notification: AcNotification)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="235" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:235</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="235"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-layer/ac-layer.component.ts:235</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>notification</td>
-                                                        <td>
-                                                                    <code>AcNotification</code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>notification</td>
+                                    <td>
+                                            <code>AcNotification</code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
-
     <section>
     
         <h3 id="inputs">
@@ -1844,21 +1864,14 @@ Example: getDataSourceOfDrawer(&#39;polyline&#39;) returns the dataSource of pol
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            _drawerList
-                            </b>
+                            _drawerList</b>
                             <a href="#_drawerList"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>_drawerList:     <code><a href="../classes/BasicDrawerService.html" target="_self" >Map&lt;string | BasicDrawerService&gt;</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../classes/BasicDrawerService.html" target="_self" >Map&lt;string | BasicDrawerService&gt;</a></code>
+                            <i>Type : </i>        <code><a href="../classes/BasicDrawerService.html" target="_self" >Map&lt;string | BasicDrawerService&gt;</a></code>
 
                         </td>
                     </tr>
@@ -1879,16 +1892,9 @@ Example: getDataSourceOfDrawer(&#39;polyline&#39;) returns the dataSource of pol
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            _updateStream
-                            </b>
+                            _updateStream</b>
                             <a href="#_updateStream"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>_updateStream:     <code>Subject&lt;AcNotification&gt;</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -1920,16 +1926,9 @@ Example: getDataSourceOfDrawer(&#39;polyline&#39;) returns the dataSource of pol
                             <b>
                                 <span class="modifier">Private</span>
                                 <span class="modifier">Readonly</span>
-                            acForRgx
-                            </b>
+                            acForRgx</b>
                             <a href="#acForRgx"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>acForRgx:     <code></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -1954,16 +1953,9 @@ Example: getDataSourceOfDrawer(&#39;polyline&#39;) returns the dataSource of pol
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            entitiesStore
-                            </b>
+                            entitiesStore</b>
                             <a href="#entitiesStore"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>entitiesStore:     <code></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -1988,21 +1980,14 @@ Example: getDataSourceOfDrawer(&#39;polyline&#39;) returns the dataSource of pol
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            entityName
-                            </b>
+                            entityName</b>
                             <a href="#entityName"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>entityName:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
 
                         </td>
                     </tr>
@@ -2023,16 +2008,9 @@ Example: getDataSourceOfDrawer(&#39;polyline&#39;) returns the dataSource of pol
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            layerDrawerDataSources
-                            </b>
+                            layerDrawerDataSources</b>
                             <a href="#layerDrawerDataSources"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>layerDrawerDataSources:     <code>any[]</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -2063,16 +2041,9 @@ Example: getDataSourceOfDrawer(&#39;polyline&#39;) returns the dataSource of pol
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            observable
-                            </b>
+                            observable</b>
                             <a href="#observable"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>observable:     <code>Observable&lt;AcNotification&gt;</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -2098,16 +2069,9 @@ Example: getDataSourceOfDrawer(&#39;polyline&#39;) returns the dataSource of pol
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            stopObservable
-                            </b>
+                            stopObservable</b>
                             <a href="#stopObservable"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>stopObservable:     <code></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -2557,6 +2521,7 @@ export class AcLayerComponent implements OnInit, OnChanges, AfterContentInit, On
 
 
 
+                   
 
 
 
@@ -2579,6 +2544,7 @@ export class AcLayerComponent implements OnInit, OnChanges, AfterContentInit, On
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AcLayerComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

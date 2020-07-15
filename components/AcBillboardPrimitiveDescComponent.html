@@ -70,15 +70,19 @@ The properties of props are:</p>
 <li><a href="https://cesiumjs.org/Cesium/Build/Documentation/Billboard.html">https://cesiumjs.org/Cesium/Build/Documentation/Billboard.html</a></li>
 </ul>
 <p><strong>Usage :</strong></p>
-<div><pre class="line-numbers"><code class="language-none"> *    &lt;ac-billboard-primitive-desc props=&quot;{
- *      image: track.image,
- *      position: track.position,
- *      scale: track.scale,
- *      color: track.color,
- *      name: track.name
- *    }&quot;&gt;
- *    &lt;/ac-billboard-primitive-desc&gt;
- *</code></pre></div>
+<p>```</p>
+<ul>
+<li>&lt;ac-billboard-primitive-desc props=&quot;{</li>
+<li>image: track.image,</li>
+<li>position: track.position,</li>
+<li>scale: track.scale,</li>
+<li>color: track.color,</li>
+<li>name: track.name</li>
+<li>}&quot;&gt;</li>
+<li></ac-billboard-primitive-desc></li>
+<li>```</li>
+</ul>
+
     </p>
 
     <p class="comment">
@@ -106,7 +110,7 @@ The properties of props are:</p>
             <tr>
                 <td class="col-md-3">providers</td>
                 <td class="col-md-9">
-                            <code><a href="../components/AcBillboardPrimitiveDescComponent.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcBillboardPrimitiveDescComponent) }</a></code>
+                                <code><a href="../components/AcBillboardPrimitiveDescComponent.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcBillboardPrimitiveDescComponent) }</a></code>
                 </td>
             </tr>
 
@@ -164,7 +168,7 @@ The properties of props are:</p>
                                                         <td>billboardPrimitiveDrawer</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/BillboardPrimitiveDrawerService.html" target="_self" >BillboardPrimitiveDrawerService</a></code>
+                                                                        <code><a href="../injectables/BillboardPrimitiveDrawerService.html" target="_self" >BillboardPrimitiveDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -200,7 +204,7 @@ The properties of props are:</p>
                                                         <td>cesiumProperties</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
+                                                                        <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -311,6 +315,7 @@ export class AcBillboardPrimitiveDescComponent extends BasicDesc {
 
 
 
+                   
 
 
 
@@ -333,6 +338,7 @@ export class AcBillboardPrimitiveDescComponent extends BasicDesc {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AcBillboardPrimitiveDescComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

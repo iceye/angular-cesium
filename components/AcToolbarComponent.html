@@ -69,13 +69,16 @@
         <p>Toolbar widget, act as a container for ac-toolbar-button components
 allowing drag configuration and passing <code>toolbarClass</code> as attributes</p>
 <p>Usage:</p>
-<div><pre class="line-numbers"><code class="language-none"> * &lt;ac-toolbar [allowDrag]=&quot;true&quot; (onDrag)=&quot;handleDrag($event)&quot;&gt;
- &lt;ac-toolbar-button [iconUrl]=&quot;&#39;assets/home-icon.svg&#39;&quot; (onClick)=&quot;goHome()&quot;&gt;
- &lt;/ac-toolbar-button&gt;
- &lt;ac-toolbar-button [iconUrl]=&quot;&#39;assets/explore-icon.svg&#39;&quot; (onClick)=&quot;rangeAndBearing()&quot;&gt;
- &lt;/ac-toolbar-button&gt;
- &lt;/ac-toolbar&gt;
- *</code></pre></div>
+<p>```</p>
+<ul>
+<li>&lt;ac-toolbar [allowDrag]=&quot;true&quot; (onDrag)=&quot;handleDrag($event)&quot;&gt;
+&lt;ac-toolbar-button [iconUrl]=&quot;&#39;assets/home-icon.svg&#39;&quot; (onClick)=&quot;goHome()&quot;&gt;</ac-toolbar-button>
+<ac-toolbar-button [iconUrl]="'assets/explore-icon.svg'" (onClick)="rangeAndBearing()">
+</ac-toolbar-button>
+</ac-toolbar></li>
+<li>```</li>
+</ul>
+
     </p>
 
 
@@ -83,9 +86,9 @@ allowing drag configuration and passing <code>toolbarClass</code> as attributes<
         <h3>Implements</h3>
     </p>
     <p class="comment">
-                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
-                <code><a href="https://angular.io/api/core/OnChanges" target="_blank" >OnChanges</a></code>
-                <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnChanges" target="_blank" >OnChanges</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
     </p>
 
 
@@ -290,7 +293,7 @@ allowing drag configuration and passing <code>toolbarClass</code> as attributes<
                                                         <td>element</td>
                                                   
                                                         <td>
-                                                                    <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+                                                                        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -302,7 +305,7 @@ allowing drag configuration and passing <code>toolbarClass</code> as attributes<
                                                         <td>cesiumService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CesiumService.html" target="_self" >CesiumService</a></code>
+                                                                        <code><a href="../injectables/CesiumService.html" target="_self" >CesiumService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -324,14 +327,14 @@ allowing drag configuration and passing <code>toolbarClass</code> as attributes<
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="allowDrag"></a>
-                        <code>allowDrag</code>
+                        <b>allowDrag</b>
                     </td>
-                    <td class="col-md-10">
-                        <p>
-                            <em>Default value : </em><code>true</code>
-                        </p>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
                     </td>
                 </tr>
                         <tr>
@@ -344,15 +347,15 @@ allowing drag configuration and passing <code>toolbarClass</code> as attributes<
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="toolbarClass"></a>
-                        <code>toolbarClass</code>
+                        <b>toolbarClass</b>
                     </td>
-                    <td class="col-md-10">
-                            <p>
-                            <em>Type :</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
 
-                            </p>
                     </td>
                 </tr>
                         <tr>
@@ -368,12 +371,14 @@ allowing drag configuration and passing <code>toolbarClass</code> as attributes<
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
-                    <td class="col-md-2">
+                    <td class="col-md-4">
                         <a name="onDrag"></a>
-                        <code>onDrag</code>
+                        <b>onDrag</b>
                     </td>
-                    <td class="col-md-10">
-                        <em><code>$event</code> Type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
 
                     </td>
                 </tr>
@@ -389,196 +394,199 @@ allowing drag configuration and passing <code>toolbarClass</code> as attributes<
 
     <section>
     
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="listenForDragging"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="listenForDragging"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             listenForDragging
-                            </b>
-                            <a href="#listenForDragging"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>listenForDragging()</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#listenForDragging"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>listenForDragging()</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="106" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/components/toolbar/ac-toolbar/ac-toolbar.component.ts:106</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="106"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/components/toolbar/ac-toolbar/ac-toolbar.component.ts:106</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngOnChanges"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnChanges"></a>
+                    <span class="name">
+                        <b>
                             ngOnChanges
-                            </b>
-                            <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#ngOnChanges"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>ngOnChanges(changes: <a href="https://angular.io/api/core/SimpleChanges" target="_blank">SimpleChanges</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/components/toolbar/ac-toolbar/ac-toolbar.component.ts:90</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/components/toolbar/ac-toolbar/ac-toolbar.component.ts:90</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>changes</td>
-                                                        <td>
-                                                                    <code><a href="https://angular.io/api/core/SimpleChanges" target="_blank" >SimpleChanges</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>changes</td>
+                                    <td>
+                                                <code><a href="https://angular.io/api/core/SimpleChanges" target="_blank" >SimpleChanges</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngOnDestroy"></a>
-                        <span class="name">
-                            <b>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
                             ngOnDestroy
-                            </b>
-                            <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>ngOnDestroy()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/components/toolbar/ac-toolbar/ac-toolbar.component.ts:100</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/components/toolbar/ac-toolbar/ac-toolbar.component.ts:100</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngOnInit"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
                             ngOnInit
-                            </b>
-                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>ngOnInit()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/components/toolbar/ac-toolbar/ac-toolbar.component.ts:82</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="82"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/components/toolbar/ac-toolbar/ac-toolbar.component.ts:82</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
-
     <section>
     
         <h3 id="inputs">
@@ -592,16 +600,9 @@ allowing drag configuration and passing <code>toolbarClass</code> as attributes<
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            drag$
-                            </b>
+                            drag$</b>
                             <a href="#drag$"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>drag$:     <code>Observable&lt;MouseEvent&gt;</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -626,21 +627,14 @@ allowing drag configuration and passing <code>toolbarClass</code> as attributes<
                         <a name="dragStyle"></a>
                         <span class="name">
                             <b>
-                            dragStyle
-                            </b>
+                            dragStyle</b>
                             <a href="#dragStyle"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>dragStyle:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
 
                         </td>
                     </tr>
@@ -669,16 +663,9 @@ allowing drag configuration and passing <code>toolbarClass</code> as attributes<
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            dragSubscription
-                            </b>
+                            dragSubscription</b>
                             <a href="#dragSubscription"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>dragSubscription:     <code>Subscription</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -704,16 +691,9 @@ allowing drag configuration and passing <code>toolbarClass</code> as attributes<
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            mouseDown$
-                            </b>
+                            mouseDown$</b>
                             <a href="#mouseDown$"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>mouseDown$:     <code>Observable&lt;MouseEvent&gt;</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -739,16 +719,9 @@ allowing drag configuration and passing <code>toolbarClass</code> as attributes<
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            mouseMove$
-                            </b>
+                            mouseMove$</b>
                             <a href="#mouseMove$"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>mouseMove$:     <code>Observable&lt;MouseEvent&gt;</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -774,16 +747,9 @@ allowing drag configuration and passing <code>toolbarClass</code> as attributes<
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            mouseUp$
-                            </b>
+                            mouseUp$</b>
                             <a href="#mouseUp$"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>mouseUp$:     <code>Observable&lt;MouseEvent&gt;</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -991,6 +957,7 @@ export class AcToolbarComponent implements OnInit, OnChanges, OnDestroy {
 
 
 
+                   
 
 
 
@@ -1013,6 +980,7 @@ export class AcToolbarComponent implements OnInit, OnChanges, OnDestroy {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AcToolbarComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

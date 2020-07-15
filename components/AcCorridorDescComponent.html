@@ -72,13 +72,17 @@ of Entity</p>
 <li><a href="https://cesiumjs.org/Cesium/Build/Documentation/CorridorGraphics.html">https://cesiumjs.org/Cesium/Build/Documentation/CorridorGraphics.html</a></li>
 </ul>
 <p><strong>Usage:</strong></p>
-<div><pre class="line-numbers"><code class="language-none"> *   &lt;ac-corridor-desc props=&quot;{
- *     show : point.show, //optional
- *     positions : point.positions,
- *     material : point.color  //optional
- *   }&quot;&gt;
- *   &lt;/ac-corridor-desc&gt;
- *</code></pre></div>
+<p>```</p>
+<ul>
+<li>&lt;ac-corridor-desc props=&quot;{</li>
+<li>show : point.show, //optional</li>
+<li>positions : point.positions,</li>
+<li>material : point.color  //optional</li>
+<li>}&quot;&gt;</li>
+<li></ac-corridor-desc></li>
+<li>```</li>
+</ul>
+
     </p>
 
     <p class="comment">
@@ -106,7 +110,7 @@ of Entity</p>
             <tr>
                 <td class="col-md-3">providers</td>
                 <td class="col-md-9">
-                            <code><a href="../components/AcCorridorDescComponent.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcCorridorDescComponent) }</a></code>
+                                <code><a href="../components/AcCorridorDescComponent.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcCorridorDescComponent) }</a></code>
                 </td>
             </tr>
 
@@ -164,7 +168,7 @@ of Entity</p>
                                                         <td>drawerService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CorridorDrawerService.html" target="_self" >CorridorDrawerService</a></code>
+                                                                        <code><a href="../injectables/CorridorDrawerService.html" target="_self" >CorridorDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -200,7 +204,7 @@ of Entity</p>
                                                         <td>cesiumProperties</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
+                                                                        <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -310,6 +314,7 @@ export class AcCorridorDescComponent extends BasicDesc {
 
 
 
+                   
 
 
 
@@ -332,6 +337,7 @@ export class AcCorridorDescComponent extends BasicDesc {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AcCorridorDescComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

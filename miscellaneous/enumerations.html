@@ -44,6 +44,7 @@
 
 
 
+                   
 
 <ol class="breadcrumb">
   <li>Miscellaneous</li>
@@ -780,16 +781,20 @@
                         <td class="col-md-4">
                             <div class="io-description"><p>The Service is as a &quot;zoom to rectangle&quot; tool</p>
 <p>example:</p>
-<div><pre class="line-numbers"><code class="language-none"> * constructor(
- *   private cameraService: CameraService,
- *   private cesiumService: CesiumService,
- *   private zoomToRectangleService: ZoomToRectangleService,
- * ) {
- *   this.zoomToRectangleService.init(cesiumService, cameraService);
- * }
- * ...
- * this.zoomToRectangleService.activate({onComplete: () =&gt; this.zoomToRectangleService.disable()});
- *</code></pre></div><p><code>init()</code> - initialize the service with CameraService and CesiumService.
+<p>```</p>
+<ul>
+<li>constructor(</li>
+<li>private cameraService: CameraService,</li>
+<li>private cesiumService: CesiumService,</li>
+<li>private zoomToRectangleService: ZoomToRectangleService,</li>
+<li>) {</li>
+<li>this.zoomToRectangleService.init(cesiumService, cameraService);</li>
+<li>}</li>
+<li>...</li>
+<li>this.zoomToRectangleService.activate({onComplete: () =&gt; this.zoomToRectangleService.disable()});</li>
+<li><div><pre class="line-numbers"><code class="language-none"></code></pre></div></li>
+</ul>
+<p><code>init()</code> - initialize the service with CameraService and CesiumService.
 If no mapId is provided to activate() - must be called before calling <code>activate()</code>.</p>
 <p><code>disable()</code> - disables the tool.</p>
 <p><code>activate()</code> -</p>
@@ -931,6 +936,7 @@ PICK_ALL    - all entities are picked. use Cesium.scene.drillPick()</p>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'miscellaneous-enumerations';
             var COMPODOC_CURRENT_PAGE_URL = 'enumerations.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

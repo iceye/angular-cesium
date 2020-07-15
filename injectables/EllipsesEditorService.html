@@ -82,17 +82,22 @@ To add label drawing logic to your editor use the function <code>setLabelsRender
 The callback should return type <code>LabelProps[]</code>.
 You can also use <code>updateLabels()</code> to pass an array of labels of type <code>LabelProps[]</code> to be drawn.</p>
 <p>usage:</p>
-<div><pre class="line-numbers"><code class="language-typescript"> *  // Start creating ellipse
- *  const editing$ = ellipsesEditorService.create();
- *  this.editing$.subscribe(editResult =&gt; {
- *                console.log(editResult.positions);
- *        });
- *
- *  // Or edit ellipse from existing center point, two radiuses and rotation
- *  const editing$ = this.ellipsesEditorService.edit(center, majorRadius, rotation, minorRadius);
- *
- *</code></pre></div>
+<p>```typescript</p>
+<ul>
+<li>// Start creating ellipse</li>
+<li>const editing$ = ellipsesEditorService.create();</li>
+<li>this.editing$.subscribe(editResult =&gt; {</li>
+<li>console.log(editResult.positions);</li>
+<li>});</li>
+<li></li>
+<li>// Or edit ellipse from existing center point, two radiuses and rotation</li>
+<li>const editing$ = this.ellipsesEditorService.edit(center, majorRadius, rotation, minorRadius);</li>
+<li></li>
+<li>```</li>
+</ul>
+
             </p>
+
 
 
             <section>
@@ -210,1024 +215,1035 @@ You can also use <code>updateLabels()</code> to pass an array of labels of type 
 
             <section>
     
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="create"></a>
-                        <span class="name">
-                            <b>
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="create"></a>
+                    <span class="name">
+                        <b>
                             create
-                            </b>
-                            <a href="#create"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#create"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>create(options, priority: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="124" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:124</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="124"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:124</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                                    <td>Default value</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>options</td>
-                                                        <td>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                        <td>
-                                                                <code>DEFAULT_ELLIPSE_OPTIONS</code>
-                                                        </td>
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>options</td>
+                                    <td>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>priority</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                        <td>
-                                                                <code>100</code>
-                                                        </td>
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="../classes/EllipseEditorObservable.html" target="_self" >EllipseEditorObservable</a></code>
+                                    <td>
+                                        <code>DEFAULT_ELLIPSE_OPTIONS</code>
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="createEditorObservable"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+                                </tr>
+                                <tr>
+                                    <td>priority</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>100</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/EllipseEditorObservable.html" target="_self" >EllipseEditorObservable</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createEditorObservable"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             createEditorObservable
-                            </b>
-                            <a href="#createEditorObservable"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>createEditorObservable(observableToExtend: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#createEditorObservable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createEditorObservable(observableToExtend: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="402" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:402</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="402"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:402</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>observableToExtend</td>
-                                                        <td>
-                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>observableToExtend</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>id</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="../classes/EllipseEditorObservable.html" target="_self" >EllipseEditorObservable</a></code>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="edit"></a>
-                        <span class="name">
-                            <b>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/EllipseEditorObservable.html" target="_self" >EllipseEditorObservable</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="edit"></a>
+                    <span class="name">
+                        <b>
                             edit
-                            </b>
-                            <a href="#edit"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#edit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>edit(center: <a href="../interfaces/Cartesian3.html">Cartesian3</a>, majorRadius: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, rotation, minorRadius?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, options, priority: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="236" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:236</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="236"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:236</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                                    <td>Default value</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>center</td>
-                                                        <td>
-                                                                    <code><a href="../interfaces/Cartesian3.html" target="_self" >Cartesian3</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                        <td>
-                                                        </td>
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>center</td>
+                                    <td>
+                                                <code><a href="../interfaces/Cartesian3.html" target="_self" >Cartesian3</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>majorRadius</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                        <td>
-                                                        </td>
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>rotation</td>
-                                                        <td>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                        <td>
-                                                                <code>Math.PI / 2</code>
-                                                        </td>
+                                    <td>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>minorRadius</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            Yes
-                                                    </td>
-                                                    
-                                                        <td>
-                                                        </td>
+                                </tr>
+                                <tr>
+                                    <td>majorRadius</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>options</td>
-                                                        <td>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                        <td>
-                                                                <code>DEFAULT_ELLIPSE_OPTIONS</code>
-                                                        </td>
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>priority</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                        <td>
-                                                                <code>100</code>
-                                                        </td>
+                                    <td>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="../classes/EllipseEditorObservable.html" target="_self" >EllipseEditorObservable</a></code>
+                                </tr>
+                                <tr>
+                                    <td>rotation</td>
+                                    <td>
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="editEllipse"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>Math.PI / 2</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>minorRadius</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>options</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>DEFAULT_ELLIPSE_OPTIONS</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>priority</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>100</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/EllipseEditorObservable.html" target="_self" >EllipseEditorObservable</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editEllipse"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             editEllipse
-                            </b>
-                            <a href="#editEllipse"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>editEllipse(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, priority: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, editSubject: <a href="../interfaces/EllipseEditUpdate.html">Subject<EllipseEditUpdate></a>, options: <a href="../interfaces/EllipseEditOptions.html">EllipseEditOptions</a>, editObservable?: <a href="../classes/EllipseEditorObservable.html">EllipseEditorObservable</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#editEllipse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>editEllipse(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, priority: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, editSubject: <a href="../interfaces/EllipseEditUpdate.html">Subject<EllipseEditUpdate></a>, options: <a href="../interfaces/EllipseEditOptions.html">EllipseEditOptions</a>, editObservable?: <a href="../classes/EllipseEditorObservable.html">EllipseEditorObservable</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="270" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:270</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="270"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:270</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>id</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>priority</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>editSubject</td>
-                                                        <td>
-                                                                    <code><a href="../interfaces/EllipseEditUpdate.html" target="_self" >Subject&lt;EllipseEditUpdate&gt;</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
 
-                                                </tr>
-                                                <tr>
-                                                        <td>options</td>
-                                                        <td>
-                                                                    <code><a href="../interfaces/EllipseEditOptions.html" target="_self" >EllipseEditOptions</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                                </tr>
+                                <tr>
+                                    <td>priority</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>editObservable</td>
-                                                        <td>
-                                                                    <code><a href="../classes/EllipseEditorObservable.html" target="_self" >EllipseEditorObservable</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            Yes
-                                                    </td>
-                                                    
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="../classes/EllipseEditorObservable.html" target="_self" >EllipseEditorObservable</a></code>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="getCenterPoint"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+                                </tr>
+                                <tr>
+                                    <td>editSubject</td>
+                                    <td>
+                                                <code><a href="../interfaces/EllipseEditUpdate.html" target="_self" >Subject&lt;EllipseEditUpdate&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>options</td>
+                                    <td>
+                                                <code><a href="../interfaces/EllipseEditOptions.html" target="_self" >EllipseEditOptions</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>editObservable</td>
+                                    <td>
+                                                <code><a href="../classes/EllipseEditorObservable.html" target="_self" >EllipseEditorObservable</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/EllipseEditorObservable.html" target="_self" >EllipseEditorObservable</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCenterPoint"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             getCenterPoint
-                            </b>
-                            <a href="#getCenterPoint"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>getCenterPoint(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#getCenterPoint"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCenterPoint(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="493" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:493</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="493"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:493</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>id</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="../classes/EditPoint.html" target="_self" >EditPoint</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="getCenterPosition"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/EditPoint.html" target="_self" >EditPoint</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCenterPosition"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             getCenterPosition
-                            </b>
-                            <a href="#getCenterPosition"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>getCenterPosition(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#getCenterPosition"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getCenterPosition(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="489" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:489</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="489"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:489</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>id</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="../interfaces/Cartesian3.html" target="_self" >Cartesian3</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="getEllipseProperties"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/Cartesian3.html" target="_self" >Cartesian3</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEllipseProperties"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             getEllipseProperties
-                            </b>
-                            <a href="#getEllipseProperties"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>getEllipseProperties(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#getEllipseProperties"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getEllipseProperties(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="505" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:505</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="505"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:505</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>id</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code>{ center: any; rotation: any; minorRadius: any; majorRadius: any; minorRadiusPointPosition: any; ...</code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="getMajorRadius"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ center: any; rotation: any; minorRadius: any; majorRadius: any; minorRadiusPointPosition: any; ...</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMajorRadius"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             getMajorRadius
-                            </b>
-                            <a href="#getMajorRadius"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>getMajorRadius(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#getMajorRadius"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMajorRadius(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="497" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:497</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="497"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:497</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>id</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="getMinorRadius"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMinorRadius"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             getMinorRadius
-                            </b>
-                            <a href="#getMinorRadius"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>getMinorRadius(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#getMinorRadius"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMinorRadius(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="501" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:501</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="501"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:501</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>id</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="init"></a>
-                        <span class="name">
-                            <b>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="init"></a>
+                    <span class="name">
+                        <b>
                             init
-                            </b>
-                            <a href="#init"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#init"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>init(mapEventsManager: <a href="../injectables/MapEventsManagerService.html">MapEventsManagerService</a>, coordinateConverter: <a href="../injectables/CoordinateConverter.html">CoordinateConverter</a>, cameraService: <a href="../injectables/CameraService.html">CameraService</a>, ellipsesManager: <a href="../injectables/EllipsesManagerService.html">EllipsesManagerService</a>, cesiumViewer: <a href="../injectables/CesiumService.html">CesiumService</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="104" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:104</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:104</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>mapEventsManager</td>
-                                                        <td>
-                                                                    <code><a href="../injectables/MapEventsManagerService.html" target="_self" >MapEventsManagerService</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>mapEventsManager</td>
+                                    <td>
+                                                <code><a href="../injectables/MapEventsManagerService.html" target="_self" >MapEventsManagerService</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>coordinateConverter</td>
-                                                        <td>
-                                                                    <code><a href="../injectables/CoordinateConverter.html" target="_self" >CoordinateConverter</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>cameraService</td>
-                                                        <td>
-                                                                    <code><a href="../injectables/CameraService.html" target="_self" >CameraService</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
 
-                                                </tr>
-                                                <tr>
-                                                        <td>ellipsesManager</td>
-                                                        <td>
-                                                                    <code><a href="../injectables/EllipsesManagerService.html" target="_self" >EllipsesManagerService</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                                </tr>
+                                <tr>
+                                    <td>coordinateConverter</td>
+                                    <td>
+                                                <code><a href="../injectables/CoordinateConverter.html" target="_self" >CoordinateConverter</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>cesiumViewer</td>
-                                                        <td>
-                                                                    <code><a href="../injectables/CesiumService.html" target="_self" >CesiumService</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="onUpdate"></a>
-                        <span class="name">
-                            <b>
+                                </tr>
+                                <tr>
+                                    <td>cameraService</td>
+                                    <td>
+                                                <code><a href="../injectables/CameraService.html" target="_self" >CameraService</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>ellipsesManager</td>
+                                    <td>
+                                                <code><a href="../injectables/EllipsesManagerService.html" target="_self" >EllipsesManagerService</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>cesiumViewer</td>
+                                    <td>
+                                                <code><a href="../injectables/CesiumService.html" target="_self" >CesiumService</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onUpdate"></a>
+                    <span class="name">
+                        <b>
                             onUpdate
-                            </b>
-                            <a href="#onUpdate"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#onUpdate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>onUpdate()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="120" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:120</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="120"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:120</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="../interfaces/EllipseEditUpdate.html" target="_self" >Observable&lt;EllipseEditUpdate&gt;</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/EllipseEditUpdate.html" target="_self" >Observable&lt;EllipseEditUpdate&gt;</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="setOptions"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setOptions"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             setOptions
-                            </b>
-                            <a href="#setOptions"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>setOptions(options: <a href="../interfaces/EllipseEditOptions.html">EllipseEditOptions</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#setOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setOptions(options: <a href="../interfaces/EllipseEditOptions.html">EllipseEditOptions</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="480" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:480</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="480"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium-widgets/services/entity-editors/ellipses-editor/ellipses-editor.service.ts:480</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>options</td>
-                                                        <td>
-                                                                    <code><a href="../interfaces/EllipseEditOptions.html" target="_self" >EllipseEditOptions</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>options</td>
+                                    <td>
+                                                <code><a href="../interfaces/EllipseEditOptions.html" target="_self" >EllipseEditOptions</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="../interfaces/EllipseEditOptions.html" target="_self" >EllipseEditOptions</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/EllipseEditOptions.html" target="_self" >EllipseEditOptions</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
-
             <section>
     
         <h3 id="inputs">
@@ -1241,21 +1257,14 @@ You can also use <code>updateLabels()</code> to pass an array of labels of type 
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            cameraService
-                            </b>
+                            cameraService</b>
                             <a href="#cameraService"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>cameraService:     <code><a href="../injectables/CameraService.html" target="_self" >CameraService</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../injectables/CameraService.html" target="_self" >CameraService</a></code>
+                            <i>Type : </i>        <code><a href="../injectables/CameraService.html" target="_self" >CameraService</a></code>
 
                         </td>
                     </tr>
@@ -1276,21 +1285,14 @@ You can also use <code>updateLabels()</code> to pass an array of labels of type 
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            cesiumScene
-                            </b>
+                            cesiumScene</b>
                             <a href="#cesiumScene"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>cesiumScene:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                         </td>
                     </tr>
@@ -1311,21 +1313,14 @@ You can also use <code>updateLabels()</code> to pass an array of labels of type 
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            coordinateConverter
-                            </b>
+                            coordinateConverter</b>
                             <a href="#coordinateConverter"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>coordinateConverter:     <code><a href="../injectables/CoordinateConverter.html" target="_self" >CoordinateConverter</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../injectables/CoordinateConverter.html" target="_self" >CoordinateConverter</a></code>
+                            <i>Type : </i>        <code><a href="../injectables/CoordinateConverter.html" target="_self" >CoordinateConverter</a></code>
 
                         </td>
                     </tr>
@@ -1346,21 +1341,14 @@ You can also use <code>updateLabels()</code> to pass an array of labels of type 
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            ellipsesManager
-                            </b>
+                            ellipsesManager</b>
                             <a href="#ellipsesManager"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>ellipsesManager:     <code><a href="../injectables/EllipsesManagerService.html" target="_self" >EllipsesManagerService</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../injectables/EllipsesManagerService.html" target="_self" >EllipsesManagerService</a></code>
+                            <i>Type : </i>        <code><a href="../injectables/EllipsesManagerService.html" target="_self" >EllipsesManagerService</a></code>
 
                         </td>
                     </tr>
@@ -1381,21 +1369,14 @@ You can also use <code>updateLabels()</code> to pass an array of labels of type 
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            mapEventsManager
-                            </b>
+                            mapEventsManager</b>
                             <a href="#mapEventsManager"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>mapEventsManager:     <code><a href="../injectables/MapEventsManagerService.html" target="_self" >MapEventsManagerService</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../injectables/MapEventsManagerService.html" target="_self" >MapEventsManagerService</a></code>
+                            <i>Type : </i>        <code><a href="../injectables/MapEventsManagerService.html" target="_self" >MapEventsManagerService</a></code>
 
                         </td>
                     </tr>
@@ -1416,16 +1397,9 @@ You can also use <code>updateLabels()</code> to pass an array of labels of type 
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            observablesMap
-                            </b>
+                            observablesMap</b>
                             <a href="#observablesMap"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>observablesMap:     <code></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -1450,16 +1424,9 @@ You can also use <code>updateLabels()</code> to pass an array of labels of type 
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            updatePublisher
-                            </b>
+                            updatePublisher</b>
                             <a href="#updatePublisher"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>updatePublisher:     <code></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -1484,16 +1451,9 @@ You can also use <code>updateLabels()</code> to pass an array of labels of type 
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            updateSubject
-                            </b>
+                            updateSubject</b>
                             <a href="#updateSubject"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>updateSubject:     <code></code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -2043,6 +2003,7 @@ export class EllipsesEditorService {
 
 
 
+                   
 
 
 
@@ -2065,6 +2026,7 @@ export class EllipsesEditorService {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
             var COMPODOC_CURRENT_PAGE_URL = 'EllipsesEditorService.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

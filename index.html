@@ -42,7 +42,7 @@ Check out our <a href="https://docs.angular-cesium.com">Docs</a> and our blog po
 <h2 id="getting-started">Getting started</h2>
 <h4 id="if-you-are-using-angular-cli-you-can-add-the-angular-cesium-library-using-schematics">If you are using Angular CLI, you can add the angular-cesium library using schematics</h4>
 <ul>
-<li>add <code>angular-cesium</code>:<div><pre class="line-numbers"><code class="language-bash">$ ng add angular-cesium</code></pre></div><h4 id="manual-installation-details-here-">Manual installation details <a href="https://docs.angular-cesium.com/getting-started/installation">here</a>.</h4>
+<li>add <code>angular-cesium</code>:<div><pre class="line-numbers"><code class="language-bash">$ ng add angular-cesium</code></pre></div><h4 id="manual-installation-details-here">Manual installation details <a href="https://docs.angular-cesium.com/getting-started/installation">here</a>.</h4>
 </li>
 </ul>
 <h2 id="demo">Demo</h2>
@@ -65,7 +65,8 @@ Check out our <a href="https://docs.angular-cesium.com">Docs</a> and our blog po
 </ul>
 <h2 id="basic-example">Basic example</h2>
 <ul>
-<li>In your HTML file :<div><pre class="line-numbers"><code class="language-html">  &lt;ac-map&gt;
+<li><p>In your HTML file :</p>
+<div><pre class="line-numbers"><code class="language-html">  &lt;ac-map&gt;
       &lt;ac-layer acFor=&quot;let plane of planes$&quot; [show]=&quot;showTracks&quot; [context]=&quot;this&quot;&gt;
           &lt;ac-billboard-desc props=&quot;{
                     image: plane.image,
@@ -79,7 +80,8 @@ Check out our <a href="https://docs.angular-cesium.com">Docs</a> and our blog po
           &lt;/ac-label-desc&gt;
       &lt;/ac-layer&gt;
   &lt;/ac-map&gt;</code></pre></div></li>
-<li><code>ac-map</code> creates the map</li>
+<li><p><code>ac-map</code> creates the map</p>
+</li>
 <li><p><code>ac-layer</code> component represent an array of entities that will be displayed on the map.</p>
 <ul>
 <li><code>acFor</code> attribute accepts an RxObserver <code>planes$</code> , <code>ac-layer</code> will subscribe to the observer
@@ -195,11 +197,11 @@ constructor(mapsManagerService: MapsManagerService)
 <p>Check out the <a href="https://docs.angular-cesium.com/widgets/shape-editors">Geometry Editors Doc</a></p>
 <h3 id="screenshotservice">ScreenshotService</h3>
 <p>Take screenshot of your cesium globe.</p>
-<h3 id="contextmenuservice-stackblitz">ContextMenuService - <a href="https://stackblitz.com/edit/angular-cesium-context-menu-example?embed=1&amp;file=src/app/context-menu-layer/context-menu-layer.component.ts">stackblitz</a></h3>
+<h3 id="contextmenuservice---stackblitz">ContextMenuService - <a href="https://stackblitz.com/edit/angular-cesium-context-menu-example?embed=1&amp;file=src/app/context-menu-layer/context-menu-layer.component.ts">stackblitz</a></h3>
 <p>create any custom angular component and anchor it to a map position, <a href="https://docs.angular-cesium.com/guides/context-menu-on-the-map">context menu guide</a>.</p>
 <h2 id="documents">Documents</h2>
 <ul>
-<li><h4 id="docs-https-docs-angular-cesium-com-">Docs <a href="https://docs.angular-cesium.com/">https://docs.angular-cesium.com/</a></h4>
+<li><h4 id="docs-httpsdocsangular-cesiumcom">Docs <a href="https://docs.angular-cesium.com/">https://docs.angular-cesium.com/</a></h4>
 </li>
 <li><h4 id="api-docs"><a href="https://articodeltd.github.io/angular-cesium/">Api Docs</a></h4>
 </li>
@@ -225,6 +227,7 @@ Feel free to contact us for consulting or any business endeavors.</p>
 
 
 
+                   
 
 
 
@@ -247,6 +250,7 @@ Feel free to contact us for consulting or any business endeavors.</p>
             var COMPODOC_CURRENT_PAGE_DEPTH = 0;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
             var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="./js/libs/custom-elements.min.js"></script>

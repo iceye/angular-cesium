@@ -71,13 +71,17 @@ The properties of props are the same as the properties of Entity and ModelGraphi
 <li><a href="https://cesiumjs.org/Cesium/Build/Documentation/ModelGraphics.html">https://cesiumjs.org/Cesium/Build/Documentation/ModelGraphics.html</a></li>
 </ul>
 <p><strong>Usage:</strong></p>
-<div><pre class="line-numbers"><code class="language-none"> *    &lt;ac-model-desc props=&quot;{
- *       position : Cesium.Cartesian3.fromDegrees(-123.0744619, 44.0503706),
- *       uri : &#39;../../SampleData/models/CesiumGround/Cesium_Ground.gltf&#39;
- *   }
- *    }&quot;&gt;
- *    &lt;/ac-model-desc&gt;
- *</code></pre></div>
+<p>```</p>
+<ul>
+<li>&lt;ac-model-desc props=&quot;{</li>
+<li>position : Cesium.Cartesian3.fromDegrees(-123.0744619, 44.0503706),</li>
+<li>uri : &#39;../../SampleData/models/CesiumGround/Cesium_Ground.gltf&#39;</li>
+<li>}</li>
+<li>}&quot;&gt;</li>
+<li></ac-model-desc></li>
+<li>```</li>
+</ul>
+
     </p>
 
     <p class="comment">
@@ -91,7 +95,7 @@ The properties of props are the same as the properties of Entity and ModelGraphi
         <h3>Implements</h3>
     </p>
     <p class="comment">
-                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
     </p>
 
 
@@ -111,7 +115,7 @@ The properties of props are the same as the properties of Entity and ModelGraphi
             <tr>
                 <td class="col-md-3">providers</td>
                 <td class="col-md-9">
-                            <code><a href="../components/AcModelDescComponent.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcModelDescComponent) }</a></code>
+                                <code><a href="../components/AcModelDescComponent.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcModelDescComponent) }</a></code>
                 </td>
             </tr>
 
@@ -169,7 +173,7 @@ The properties of props are the same as the properties of Entity and ModelGraphi
                                                         <td>modelDrawer</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/ModelDrawerService.html" target="_self" >ModelDrawerService</a></code>
+                                                                        <code><a href="../injectables/ModelDrawerService.html" target="_self" >ModelDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -205,7 +209,7 @@ The properties of props are the same as the properties of Entity and ModelGraphi
                                                         <td>cesiumProperties</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
+                                                                        <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -314,6 +318,7 @@ export class AcModelDescComponent extends BasicDesc implements OnInit {
 
 
 
+                   
 
 
 
@@ -336,6 +341,7 @@ export class AcModelDescComponent extends BasicDesc implements OnInit {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AcModelDescComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

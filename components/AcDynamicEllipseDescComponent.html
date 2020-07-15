@@ -65,22 +65,26 @@
     <p class="comment">
         <p>This is a dynamic(position is updatable) implementation of an ellipse.</p>
 <p><strong>Usage :</strong></p>
-<div><pre class="line-numbers"><code class="language-none"> *    &amp;lt;ac-dynamic-ellipse-desc props=&quot;{
- *      center: data.position,
- *      semiMajorAxis:250000.0,
- *      semiMinorAxis:400000.0,
- *      rotation : 0.785398,
- *      width:3, // Optional
- *      granularity:0.08 // Optional
- *      }&quot;&amp;gt;
- *    &quot;&gt;
- *    &amp;lt;/ac-dynamic-ellipse-desc&amp;gt;
- *</code></pre></div><p><strong>param:</strong> {Cesium.Cartesian3} center
+<p>```</p>
+<ul>
+<li>&lt;ac-dynamic-ellipse-desc props=&quot;{</li>
+<li>center: data.position,</li>
+<li>semiMajorAxis:250000.0,</li>
+<li>semiMinorAxis:400000.0,</li>
+<li>rotation : 0.785398,</li>
+<li>width:3, // Optional</li>
+<li>granularity:0.08 // Optional</li>
+<li>}&quot;&gt;</li>
+<li>&quot;&gt;</li>
+<li>&lt;/ac-dynamic-ellipse-desc&gt;</li>
+<li>```
+<strong>param:</strong> {Cesium.Cartesian3} center
 <strong>param:</strong> {number} semiMajorAxis
 <strong>param:</strong> {number} semiMinorAxis
 <strong>param:</strong> {number} rotation
-  <strong>param</strong>: {number} [1] width
-  <strong>param</strong>: {number} [0.003] granularity</p>
+<strong>param</strong>: {number} [1] width
+<strong>param</strong>: {number} [0.003] granularity</li>
+</ul>
 
     </p>
 
@@ -161,7 +165,7 @@
                                                         <td>ellipseDrawer</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/DynamicEllipseDrawerService.html" target="_self" >DynamicEllipseDrawerService</a></code>
+                                                                        <code><a href="../injectables/DynamicEllipseDrawerService.html" target="_self" >DynamicEllipseDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -197,7 +201,7 @@
                                                         <td>cesiumProperties</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
+                                                                        <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -312,6 +316,7 @@ export class AcDynamicEllipseDescComponent extends BasicDesc {
 
 
 
+                   
 
 
 
@@ -334,6 +339,7 @@ export class AcDynamicEllipseDescComponent extends BasicDesc {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AcDynamicEllipseDescComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

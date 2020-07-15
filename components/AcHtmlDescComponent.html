@@ -68,19 +68,22 @@ The ac-html element must be a child of ac-layer element.
 <br>
 [props] accepts position(Cartesian3) and show(boolean).</p>
 <p><strong>Usage:</strong></p>
-<div><pre class="line-numbers"><code class="language-none"> *  &lt;ac-layer acFor=&quot;let html of htmls$&quot; [context]=&quot;this&quot;&gt;
- &lt;ac-html-desc props=&quot;{position: html.position, show: html.show}&quot;&gt;
- &lt;ng-template let-html&gt;
- &lt;div&gt;
- &lt;h1&gt;This is ac-html {{html.name}}&lt;/h1&gt;
- &lt;button (click)=&quot;changeText(html, &#39;Test&#39;)&quot;&gt;change text&lt;/button&gt;
- &lt;/div&gt;
- &lt;/ng-template&gt;
- &lt;/ac-html-desc&gt;
- *  &lt;ac-html [props]=&quot;{position: position, show: true}&quot;&gt;;
- *    &lt;p&gt;html element&lt;/p&gt;
- *  &lt;/ac-html&gt;
- *</code></pre></div>
+<p>```</p>
+<ul>
+<li>&lt;ac-layer acFor=&quot;let html of htmls$&quot; [context]=&quot;this&quot;&gt;<ac-html-desc props="{position: html.position, show: html.show}">
+<ng-template let-html>
+<div>
+<h1>This is ac-html {{html.name}}</h1>
+<button (click)="changeText(html, 'Test')">change text</button>
+</div>
+</ng-template>
+</ac-html-desc></li>
+<li>&lt;ac-html [props]=&quot;{position: position, show: true}&quot;&gt;;</li>
+<li><p>html element</p></li>
+<li></ac-html></li>
+<li>```</li>
+</ul>
+
     </p>
 
     <p class="comment">
@@ -94,7 +97,7 @@ The ac-html element must be a child of ac-layer element.
         <h3>Implements</h3>
     </p>
     <p class="comment">
-                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
     </p>
 
 
@@ -114,7 +117,7 @@ The ac-html element must be a child of ac-layer element.
             <tr>
                 <td class="col-md-3">providers</td>
                 <td class="col-md-9">
-                            <code><a href="../injectables/AcHtmlManager.html" target="_self" >AcHtmlManager</a></code>
+                                <code><a href="../injectables/AcHtmlManager.html" target="_self" >AcHtmlManager</a></code>
                 </td>
             </tr>
 
@@ -234,7 +237,7 @@ The ac-html element must be a child of ac-layer element.
                                                         <td>htmlDrawer</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/HtmlDrawerService.html" target="_self" >HtmlDrawerService</a></code>
+                                                                        <code><a href="../injectables/HtmlDrawerService.html" target="_self" >HtmlDrawerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -270,7 +273,7 @@ The ac-html element must be a child of ac-layer element.
                                                         <td>cesiumProperties</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
+                                                                        <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -293,237 +296,240 @@ The ac-html element must be a child of ac-layer element.
 
     <section>
     
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="draw"></a>
-                        <span class="name">
-                            <b>
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="draw"></a>
+                    <span class="name">
+                        <b>
                             draw
-                            </b>
-                            <a href="#draw"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#draw"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>draw(context: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, id: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-html-desc/ac-html-desc.component.ts:65</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-html-desc/ac-html-desc.component.ts:65</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>context</td>
-                                                        <td>
-                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>context</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>id</td>
-                                                        <td>
-                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngOnInit"></a>
-                        <span class="name">
-                            <b>
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
                             ngOnInit
-                            </b>
-                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>ngOnInit()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-html-desc/ac-html-desc.component.ts:53</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="53"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-html-desc/ac-html-desc.component.ts:53</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="remove"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="remove"></a>
+                    <span class="name">
+                        <b>
                             remove
-                            </b>
-                            <a href="#remove"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#remove"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>remove(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-html-desc/ac-html-desc.component.ts:78</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-html-desc/ac-html-desc.component.ts:78</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>id</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="removeAll"></a>
-                        <span class="name">
-                            <b>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeAll"></a>
+                    <span class="name">
+                        <b>
                             removeAll
-                            </b>
-                            <a href="#removeAll"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#removeAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>removeAll()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-html-desc/ac-html-desc.component.ts:85</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-html-desc/ac-html-desc.component.ts:85</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
-
     <section>
     
         <h3 id="inputs">
@@ -536,16 +542,9 @@ The ac-html element must be a child of ac-layer element.
                         <a name="acHtmlCreator"></a>
                         <span class="name">
                             <b>
-                            acHtmlCreator
-                            </b>
+                            acHtmlCreator</b>
                             <a href="#acHtmlCreator"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>acHtmlCreator:     <code>AcHtmlDirective</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -559,7 +558,7 @@ The ac-html element must be a child of ac-layer element.
                             <b>Decorators : </b>
                             <br />
                             <code>
-                                @ViewChild(AcHtmlDirective, {static: undefined})<br />
+                                @ViewChild(AcHtmlDirective, {static: true})<br />
                             </code>
                         </td>
                     </tr>
@@ -579,16 +578,9 @@ The ac-html element must be a child of ac-layer element.
                         <a name="acHtmlTemplate"></a>
                         <span class="name">
                             <b>
-                            acHtmlTemplate
-                            </b>
+                            acHtmlTemplate</b>
                             <a href="#acHtmlTemplate"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>acHtmlTemplate:     <code>TemplateRef&lt;any&gt;</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -602,7 +594,7 @@ The ac-html element must be a child of ac-layer element.
                             <b>Decorators : </b>
                             <br />
                             <code>
-                                @ContentChild(TemplateRef, {static: undefined})<br />
+                                @ContentChild(TemplateRef, {static: true})<br />
                             </code>
                         </td>
                     </tr>
@@ -759,6 +751,7 @@ export class AcHtmlDescComponent extends BasicDesc implements OnInit {
 
 
 
+                   
 
 
 
@@ -781,6 +774,7 @@ export class AcHtmlDescComponent extends BasicDesc implements OnInit {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AcHtmlDescComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

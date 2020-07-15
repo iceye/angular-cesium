@@ -69,26 +69,31 @@ the service will manage the list of selected items.
 check out the example
 you must provide the service yourself</p>
 <p>  <strong>Usage :</strong></p>
-<div><pre class="line-numbers"><code class="language-none"> * // provide the service in some component
- * &#64;Component({
- * //...
- *  providers: [SelectionManagerService]
- * }
- *
- * // Usage example:
- * // init selection
- * const selectedIndicator = ture; // optional default true, if true a boolean &quot;selected&quot; property will be added to the selected entity
- * selectionManagerService.initSelection({ event: CesiumEvent.LEFT_CLICK,
- *                                                                             modifier: CesiumEventModifier.CTRL
- *                                                                         },selectedIndicator);
- * // Get selected
- * const selected = selectionManagerService.selected();
- *
- * // Or as observer
- * const selected$ = selectionManagerService.selected$();
- *
- *</code></pre></div>
+<p>```</p>
+<ul>
+<li>// provide the service in some component</li>
+<li>@Component({</li>
+<li>//...</li>
+<li>providers: [SelectionManagerService]</li>
+<li>}</li>
+<li></li>
+<li>// Usage example:</li>
+<li>// init selection</li>
+<li>const selectedIndicator = ture; // optional default true, if true a boolean &quot;selected&quot; property will be added to the selected entity</li>
+<li>selectionManagerService.initSelection({ event: CesiumEvent.LEFT_CLICK,</li>
+<li>modifier: CesiumEventModifier.CTRL</li>
+<li>},selectedIndicator);</li>
+<li>// Get selected</li>
+<li>const selected = selectionManagerService.selected();</li>
+<li></li>
+<li>// Or as observer</li>
+<li>const selected$ = selectionManagerService.selected$();</li>
+<li></li>
+<li>```</li>
+</ul>
+
             </p>
+
 
 
             <section>
@@ -192,7 +197,7 @@ you must provide the service yourself</p>
                                                         <td>mapsManager</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/MapsManagerService.html" target="_self" >MapsManagerService</a></code>
+                                                                        <code><a href="../injectables/MapsManagerService.html" target="_self" >MapsManagerService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -211,486 +216,492 @@ you must provide the service yourself</p>
 
             <section>
     
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="addToSelected"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addToSelected"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             addToSelected
-                            </b>
-                            <a href="#addToSelected"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>addToSelected(entity: <a href="../classes/AcEntity.html">AcEntity</a>, addSelectedIndicator: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#addToSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>addToSelected(entity: <a href="../classes/AcEntity.html">AcEntity</a>, addSelectedIndicator: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/selection-manager/selection-manager.service.ts:77</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/selection-manager/selection-manager.service.ts:77</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>entity</td>
-                                                        <td>
-                                                                    <code><a href="../classes/AcEntity.html" target="_self" >AcEntity</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>entity</td>
+                                    <td>
+                                                <code><a href="../classes/AcEntity.html" target="_self" >AcEntity</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>addSelectedIndicator</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="initSelection"></a>
-                        <span class="name">
-                            <b>
+                                </tr>
+                                <tr>
+                                    <td>addSelectedIndicator</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initSelection"></a>
+                    <span class="name">
+                        <b>
                             initSelection
-                            </b>
-                            <a href="#initSelection"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#initSelection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>initSelection(selectionOptions?: <a href="../interfaces/SelectionOptions.html">SelectionOptions</a>, addSelectedIndicator, eventPriority?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, mapId?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="101" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/selection-manager/selection-manager.service.ts:101</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="101"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/selection-manager/selection-manager.service.ts:101</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                                    <td>Default value</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>selectionOptions</td>
-                                                        <td>
-                                                                    <code><a href="../interfaces/SelectionOptions.html" target="_self" >SelectionOptions</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            Yes
-                                                    </td>
-                                                    
-                                                        <td>
-                                                        </td>
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>selectionOptions</td>
+                                    <td>
+                                                <code><a href="../interfaces/SelectionOptions.html" target="_self" >SelectionOptions</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>addSelectedIndicator</td>
-                                                        <td>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
-                                                        <td>
-                                                                <code>true</code>
-                                                        </td>
+                                    <td>
+                                        Yes
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>eventPriority</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            Yes
-                                                    </td>
-                                                    
-                                                        <td>
-                                                        </td>
+                                    <td>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>mapId</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            Yes
-                                                    </td>
-                                                    
-                                                        <td>
-                                                        </td>
+                                </tr>
+                                <tr>
+                                    <td>addSelectedIndicator</td>
+                                    <td>
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                    <td>
+                                        No
+                                    </td>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="removeSelected"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
+                                    <td>
+                                        <code>true</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>eventPriority</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>mapId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeSelected"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
                             removeSelected
-                            </b>
-                            <a href="#removeSelected"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon icon ion-ios-reset"></span>
-                        <code>removeSelected(entity: <a href="../classes/AcEntity.html">AcEntity</a>, addSelectedIndicator: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
-                    </td>
-                </tr>
+                        </b>
+                        <a href="#removeSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>removeSelected(entity: <a href="../classes/AcEntity.html">AcEntity</a>, addSelectedIndicator: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/selection-manager/selection-manager.service.ts:87</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="87"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/selection-manager/selection-manager.service.ts:87</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>entity</td>
-                                                        <td>
-                                                                    <code><a href="../classes/AcEntity.html" target="_self" >AcEntity</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>entity</td>
+                                    <td>
+                                                <code><a href="../classes/AcEntity.html" target="_self" >AcEntity</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>addSelectedIndicator</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="selectedEntities"></a>
-                        <span class="name">
-                            <b>
+                                </tr>
+                                <tr>
+                                    <td>addSelectedIndicator</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedEntities"></a>
+                    <span class="name">
+                        <b>
                             selectedEntities
-                            </b>
-                            <a href="#selectedEntities"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#selectedEntities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>selectedEntities()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/selection-manager/selection-manager.service.ts:60</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/selection-manager/selection-manager.service.ts:60</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="../classes/AcEntity.html" target="_self" >AcEntity[]</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/AcEntity.html" target="_self" >AcEntity[]</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="selectedEntities$"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedEntities$"></a>
+                    <span class="name">
+                        <b>
                             selectedEntities$
-                            </b>
-                            <a href="#selectedEntities$"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#selectedEntities$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>selectedEntities$()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/selection-manager/selection-manager.service.ts:56</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="56"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/selection-manager/selection-manager.service.ts:56</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="../classes/AcEntity.html" target="_self" >Observable&lt;AcEntity[]&gt;</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/AcEntity.html" target="_self" >Observable&lt;AcEntity[]&gt;</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="selectedEntity$"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedEntity$"></a>
+                    <span class="name">
+                        <b>
                             selectedEntity$
-                            </b>
-                            <a href="#selectedEntity$"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#selectedEntity$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>selectedEntity$()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/selection-manager/selection-manager.service.ts:64</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/selection-manager/selection-manager.service.ts:64</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="toggleSelection"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleSelection"></a>
+                    <span class="name">
+                        <b>
                             toggleSelection
-                            </b>
-                            <a href="#toggleSelection"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#toggleSelection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>toggleSelection(entity: <a href="../classes/AcEntity.html">AcEntity</a>, addSelectedIndicator: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/selection-manager/selection-manager.service.ts:68</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/services/selection-manager/selection-manager.service.ts:68</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                    <b>Parameters :</b>
-                                    <table class="params">
-                                        <thead>
-                                            <tr>
-                                                <td>Name</td>
-                                                    <td>Type</td>
-                                                <td>Optional</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                                <tr>
-                                                        <td>entity</td>
-                                                        <td>
-                                                                    <code><a href="../classes/AcEntity.html" target="_self" >AcEntity</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>entity</td>
+                                    <td>
+                                                <code><a href="../classes/AcEntity.html" target="_self" >AcEntity</a></code>
+                                    </td>
 
-                                                </tr>
-                                                <tr>
-                                                        <td>addSelectedIndicator</td>
-                                                        <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
-                                                        </td>
-                                                    
-                                                    <td>
-                                                            No
-                                                    </td>
-                                                    
+                                    <td>
+                                        No
+                                    </td>
 
-                                                </tr>
-                                        </tbody>
-                                    </table>
-                            </div>
-                            <div>
-                            </div>
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                                <div class="io-description">
-                                    
-                                </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                                </tr>
+                                <tr>
+                                    <td>addSelectedIndicator</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
-
             <section>
     
         <h3 id="inputs">
@@ -704,21 +715,14 @@ you must provide the service yourself</p>
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            mapEventsManagerService
-                            </b>
+                            mapEventsManagerService</b>
                             <a href="#mapEventsManagerService"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>mapEventsManagerService:     <code><a href="../injectables/MapEventsManagerService.html" target="_self" >MapEventsManagerService</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../injectables/MapEventsManagerService.html" target="_self" >MapEventsManagerService</a></code>
+                            <i>Type : </i>        <code><a href="../injectables/MapEventsManagerService.html" target="_self" >MapEventsManagerService</a></code>
 
                         </td>
                     </tr>
@@ -738,21 +742,14 @@ you must provide the service yourself</p>
                         <a name="selectedEntitiesItems$"></a>
                         <span class="name">
                             <b>
-                            selectedEntitiesItems$
-                            </b>
+                            selectedEntitiesItems$</b>
                             <a href="#selectedEntitiesItems$"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>selectedEntitiesItems$:     <code><a href="../classes/AcEntity.html" target="_self" >BehaviorSubject&lt;AcEntity[]&gt;</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../classes/AcEntity.html" target="_self" >BehaviorSubject&lt;AcEntity[]&gt;</a></code>
+                            <i>Type : </i>        <code><a href="../classes/AcEntity.html" target="_self" >BehaviorSubject&lt;AcEntity[]&gt;</a></code>
 
                         </td>
                     </tr>
@@ -777,21 +774,14 @@ you must provide the service yourself</p>
                         <a name="selectedEntitySubject$"></a>
                         <span class="name">
                             <b>
-                            selectedEntitySubject$
-                            </b>
+                            selectedEntitySubject$</b>
                             <a href="#selectedEntitySubject$"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>selectedEntitySubject$:     <code><a href="../classes/AcEntity.html" target="_self" >Subject&lt;AcEntity&gt;</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../classes/AcEntity.html" target="_self" >Subject&lt;AcEntity&gt;</a></code>
+                            <i>Type : </i>        <code><a href="../classes/AcEntity.html" target="_self" >Subject&lt;AcEntity&gt;</a></code>
 
                         </td>
                     </tr>
@@ -955,6 +945,7 @@ export class SelectionManagerService {
 
 
 
+                   
 
 
 
@@ -977,6 +968,7 @@ export class SelectionManagerService {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
             var COMPODOC_CURRENT_PAGE_URL = 'SelectionManagerService.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

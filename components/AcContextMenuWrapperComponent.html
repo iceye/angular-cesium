@@ -66,23 +66,27 @@
         <p>This component is used to inject the component that is passed to the ContextMenuService when opening a context menu.
 It shouldn&#39;t be used directly.</p>
 <p>usage:</p>
-<div><pre class="line-numbers"><code class="language-typescript"> * // We want to open the context menu on mouse right click.
- * // Register to mouse right click with the MapEventsManager
- * this.mapEventsManager.register({ event: CesiumEvent.RIGHT_CLICK, pick: PickOptions.NO_PICK })
- *    .subscribe(event =&gt; {
- *       const position = this.coordinateConverter.screenToCartesian3(event.movement.endPosition, true);
- *       if (!position) {
- *         return;
- *       }
- *       // Open the context menu on the position that was clicked and pass some data to MyCustomContextMenuComponent.
- *       this.contextMenuService.open(
- *         MyCustomContextMenuComponent,
- *         position,
- *         { data: { items: [&#39;New Track&#39;, &#39;Change Map&#39;, &#39;Context Menu&#39;, &#39;Do Something&#39;] } }
- *       )
- *    });
- *
- *</code></pre></div>
+<p>```typescript</p>
+<ul>
+<li>// We want to open the context menu on mouse right click.</li>
+<li>// Register to mouse right click with the MapEventsManager</li>
+<li>this.mapEventsManager.register({ event: CesiumEvent.RIGHT_CLICK, pick: PickOptions.NO_PICK })</li>
+<li>.subscribe(event =&gt; {</li>
+<li>const position = this.coordinateConverter.screenToCartesian3(event.movement.endPosition, true);</li>
+<li>if (!position) {</li>
+<li>return;</li>
+<li>}</li>
+<li>// Open the context menu on the position that was clicked and pass some data to MyCustomContextMenuComponent.</li>
+<li>this.contextMenuService.open(</li>
+<li>MyCustomContextMenuComponent,</li>
+<li>position,</li>
+<li>{ data: { items: [&#39;New Track&#39;, &#39;Change Map&#39;, &#39;Context Menu&#39;, &#39;Do Something&#39;] } }</li>
+<li>)</li>
+<li>});</li>
+<li></li>
+<li>```</li>
+</ul>
+
     </p>
 
 
@@ -90,8 +94,8 @@ It shouldn&#39;t be used directly.</p>
         <h3>Implements</h3>
     </p>
     <p class="comment">
-                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
-                <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                    <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
     </p>
 
 
@@ -230,7 +234,7 @@ It shouldn&#39;t be used directly.</p>
                                                         <td>contextMenuService</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/ContextMenuService.html" target="_self" >ContextMenuService</a></code>
+                                                                        <code><a href="../injectables/ContextMenuService.html" target="_self" >ContextMenuService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -242,7 +246,7 @@ It shouldn&#39;t be used directly.</p>
                                                         <td>cd</td>
                                                   
                                                         <td>
-                                                                    <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                                        <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -254,7 +258,7 @@ It shouldn&#39;t be used directly.</p>
                                                         <td>componentFactoryResolver</td>
                                                   
                                                         <td>
-                                                                    <code><a href="https://angular.io/api/core/ComponentFactoryResolver" target="_blank" >ComponentFactoryResolver</a></code>
+                                                                        <code><a href="https://angular.io/api/core/ComponentFactoryResolver" target="_blank" >ComponentFactoryResolver</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -277,87 +281,88 @@ It shouldn&#39;t be used directly.</p>
 
     <section>
     
-        <h3 id="methods">
-            Methods
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngOnDestroy"></a>
-                        <span class="name">
-                            <b>
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <b>
                             ngOnDestroy
-                            </b>
-                            <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>ngOnDestroy()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-context-menu-wrapper/ac-context-menu-wrapper.component.ts:75</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-context-menu-wrapper/ac-context-menu-wrapper.component.ts:75</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="ngOnInit"></a>
-                        <span class="name">
-                            <b>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
                             ngOnInit
-                            </b>
-                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
 <code>ngOnInit()</code>
-                    </td>
-                </tr>
+                </td>
+            </tr>
 
 
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-context-menu-wrapper/ac-context-menu-wrapper.component.ts:62</a></div>
-                            </td>
-                        </tr>
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="62"
+                            class="link-to-prism">projects/angular-cesium/src/lib/angular-cesium/components/ac-context-menu-wrapper/ac-context-menu-wrapper.component.ts:62</a></div>
+                </td>
+            </tr>
 
 
-                <tr>
-                    <td class="col-md-4">
+            <tr>
+                <td class="col-md-4">
 
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
 
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </section>
-
     <section>
     
         <h3 id="inputs">
@@ -371,16 +376,9 @@ It shouldn&#39;t be used directly.</p>
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            contextMenuChangeSubscription
-                            </b>
+                            contextMenuChangeSubscription</b>
                             <a href="#contextMenuChangeSubscription"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>contextMenuChangeSubscription:     <code>Subscription</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -406,16 +404,9 @@ It shouldn&#39;t be used directly.</p>
                         <span class="name">
                             <b>
                                 <span class="modifier">Private</span>
-                            contextMenuOpenSubscription
-                            </b>
+                            contextMenuOpenSubscription</b>
                             <a href="#contextMenuOpenSubscription"><span class="icon ion-ios-link"></span></a>
                         </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>contextMenuOpenSubscription:     <code>Subscription</code>
-</code>
                     </td>
                 </tr>
                     <tr>
@@ -441,21 +432,14 @@ It shouldn&#39;t be used directly.</p>
                         <span class="name">
                             <b>
                                 <span class="modifier">Public</span>
-                            contextMenuService
-                            </b>
+                            contextMenuService</b>
                             <a href="#contextMenuService"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>contextMenuService:     <code><a href="../injectables/ContextMenuService.html" target="_self" >ContextMenuService</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="../injectables/ContextMenuService.html" target="_self" >ContextMenuService</a></code>
+                            <i>Type : </i>        <code><a href="../injectables/ContextMenuService.html" target="_self" >ContextMenuService</a></code>
 
                         </td>
                     </tr>
@@ -475,21 +459,14 @@ It shouldn&#39;t be used directly.</p>
                         <a name="viewContainerRef"></a>
                         <span class="name">
                             <b>
-                            viewContainerRef
-                            </b>
+                            viewContainerRef</b>
                             <a href="#viewContainerRef"><span class="icon ion-ios-link"></span></a>
                         </span>
                     </td>
                 </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <code>viewContainerRef:     <code><a href="https://angular.io/api/core/ViewContainerRef" target="_blank" >ViewContainerRef</a></code>
-</code>
-                    </td>
-                </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Type : </i>    <code><a href="https://angular.io/api/core/ViewContainerRef" target="_blank" >ViewContainerRef</a></code>
+                            <i>Type : </i>        <code><a href="https://angular.io/api/core/ViewContainerRef" target="_blank" >ViewContainerRef</a></code>
 
                         </td>
                     </tr>
@@ -647,6 +624,7 @@ export class AcContextMenuWrapperComponent implements OnInit, OnDestroy {
 
 
 
+                   
 
 
 
@@ -669,6 +647,7 @@ export class AcContextMenuWrapperComponent implements OnInit, OnDestroy {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AcContextMenuWrapperComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>

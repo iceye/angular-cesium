@@ -31,7 +31,7 @@
                <div class="content getting-started">
                    <div class="content-data">
 
-<h2 id="0-66">0.66</h2>
+<h2 id="066">0.66</h2>
 <h3 id="fixes">Fixes</h3>
 <ul>
 <li>Fix <code>HippodromeEditorObservable</code> using wrong interface</li>
@@ -40,101 +40,101 @@
 <li>Fix Editors <code>dispose()</code> issue when component is destroyed.</li>
 <li>Fix Rectangle editor <code>edit()</code>.</li>
 </ul>
-<h2 id="0-65">0.65</h2>
+<h2 id="065">0.65</h2>
 <h3 id="features">Features</h3>
 <ul>
 <li>Upgrade to Angular 9 (Ivy)</li>
 </ul>
-<h3 id="fixes">Fixes</h3>
+<h3 id="fixes-1">Fixes</h3>
 <ul>
 <li>Fix EllipseEditorObservable Disposing throws <code>undefined</code> error</li>
 <li>Fix Cesium breaking change with <code>createTileMapServiceImageryProvider</code> and <code>createOpenStreetMapImageryProvider</code>.<h3 id="breaking-changes">Breaking changes</h3>
 </li>
 <li><code>CesiumHeatMapMaterialCreator</code> removed to avoid compilation warnings. TBD: publish as external library.  </li>
 </ul>
-<h2 id="0-64">0.64</h2>
-<h3 id="features">Features</h3>
+<h2 id="064">0.64</h2>
+<h3 id="features-1">Features</h3>
 <ul>
-<li>Add points-editor component, model, and service. <code>Points</code> are now first class components that support entity features, such as labels and enable/disable.<h3 id="fixes">Fixes</h3>
+<li>Add points-editor component, model, and service. <code>Points</code> are now first class components that support entity features, such as labels and enable/disable.<h3 id="fixes-2">Fixes</h3>
 </li>
 <li>Fix shape editor drag feature - in disable mode dont disable cesium camera rotation. </li>
 </ul>
-<h2 id="0-63">0.63</h2>
-<h3 id="features">Features</h3>
+<h2 id="063">0.63</h2>
+<h3 id="features-2">Features</h3>
 <ul>
 <li>Refactor demo project and create: <a href="https://github.com/articodeltd/angular-cesium-demo">https://github.com/articodeltd/angular-cesium-demo</a></li>
 </ul>
-<h3 id="fixes">Fixes</h3>
+<h3 id="fixes-3">Fixes</h3>
 <ul>
 <li>Fix <code>ng add angular-cesium</code></li>
 </ul>
-<h2 id="0-62">0.62</h2>
-<h3 id="features">Features</h3>
+<h2 id="062">0.62</h2>
+<h3 id="features-3">Features</h3>
 <ul>
 <li>Add more stackblitz examples and refactor the demo examples.</li>
 <li>Change Circle, Ellipse and Hippodrome default point color changed to white. </li>
 </ul>
-<h3 id="fixes">Fixes</h3>
+<h3 id="fixes-4">Fixes</h3>
 <ul>
 <li>Fix <code>ng add angular-cesium</code></li>
 </ul>
-<h2 id="0-61">0.61</h2>
-<h3 id="features">Features</h3>
+<h2 id="061">0.61</h2>
+<h3 id="features-4">Features</h3>
 <ul>
 <li>Add <code>PickConfiguration</code> for <code>MapEventManager</code> for setting <code>pick()</code> width, height and <code>drillPick()</code> limit.</li>
 <li>Add support for Polyline and Polygon editors to clamp most detailed ground in <code>clampHeightTo3D</code> mode.
 using <code>clampHeightTo3DOptions.clampMostDetailed = true</code>.</li>
 <li>Add stackblitz examples to the docs.  </li>
 </ul>
-<h3 id="fixes">Fixes</h3>
+<h3 id="fixes-5">Fixes</h3>
 <ul>
 <li>Shape Editor default label <code>disableDepthTestDistance</code> changed to 0.</li>
 <li>Fix <code>AcHtml</code> toggle <code>show</code> created new html elements instead of updating the current element.</li>
 </ul>
-<h2 id="0-60">0.60</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="060">0.60</h2>
+<h3 id="fixes-6">Fixes</h3>
 <ul>
 <li>Polyline and polygon editor - fix support of events modifiers (<code>alt</code>, <code>ctrl</code>, <code>shift</code>).</li>
 <li>Polyline and polygon editor - fix screen position to geo position. </li>
 </ul>
-<h3 id="features">Features</h3>
+<h3 id="features-5">Features</h3>
 <ul>
 <li>Added a rectangle drawing editor widget</li>
 <li>Added an example rectangle component in the demo app</li>
 <li>Added <code>ac-map-terrain-provider</code> component which supports Cesium terrain providers</li>
 <li>Added <code>ac-map-terrain-provider</code> component to demo app to show it&#39;s usage</li>
 </ul>
-<h2 id="0-59">0.59</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="059">0.59</h2>
+<h3 id="fixes-7">Fixes</h3>
 <ul>
 <li>Fix <code>CameraService.trackEntity()</code> doc.</li>
 <li>Fix <code>AcHtmlDesc</code> remove.</li>
-<li>Add doc to the <code>ContextMenuService</code><h3 id="features">Features</h3>
+<li>Add doc to the <code>ContextMenuService</code><h3 id="features-6">Features</h3>
 </li>
 <li>Add support for terrain in Polygon and Polyline Editors.</li>
 <li>To enable terrain support: <code>this.polylineEditor.create({ clampHeightTo3D: true, clampHeightTo3DOptions: {clampToTerrain: true} });</code> </li>
 </ul>
-<h3 id="breaking-changes">Breaking Changes</h3>
+<h3 id="breaking-changes-1">Breaking Changes</h3>
 <ul>
 <li>Demo layers name change to <code>-example</code> suffix.</li>
 <li>Updated library and demo application to Angular 8</li>
 <li>Bumped CircleCI Node version to 10.16.1</li>
 </ul>
-<h2 id="0-58">0.58</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="058">0.58</h2>
+<h3 id="fixes-8">Fixes</h3>
 <ul>
 <li>Fix AOT build - remove unwanted type in <code>PolygonEditorComponent</code> and <code>PolylinesEditorComponent</code>.</li>
 <li>Fix entity <code>availability</code> bug in <code>entities-drawer.service.ts</code></li>
 </ul>
-<h2 id="0-57">0.57</h2>
-<h3 id="features">Features</h3>
+<h2 id="057">0.57</h2>
+<h3 id="features-7">Features</h3>
 <ul>
 <li>Added <code>debug</code> prop to <code>ac-layer</code> component for printing received AcNotifications</li>
 <li>Polygon Editor and Polyline Editor support 3D tiles and terrain, to enable set <code>clampHeightTo3D</code> parameter to <code>true</code>.</li>
 <li>Added examples for 3D mode in <code>polyline-editor-layer.ts</code> and <code>polygon-editor-layer.ts</code>.</li>
 <li>Add Angular CLI schematics</li>
 </ul>
-<h3 id="fixes">Fixes</h3>
+<h3 id="fixes-9">Fixes</h3>
 <ul>
 <li>Fix <code>CameraService</code> zoomOut().</li>
 <li>Fix Shape editors not cloning geometries props </li>
@@ -144,14 +144,14 @@ using <code>clampHeightTo3DOptions.clampMostDetailed = true</code>.</li>
 <li>Added use of the &#39;availability&#39; field inside of the Cesium entity API</li>
 <li>Add <code>MapsManagerService</code> and other global service to be provided by <code>forRoot()</code> - for lazy loading. </li>
 </ul>
-<h3 id="breaking-changes">Breaking Changes</h3>
+<h3 id="breaking-changes-2">Breaking Changes</h3>
 <ul>
 <li>Remove default <code>viewer</code> configuration (the defualt was setting offline map as the initial imagery).</li>
 <li>Change editors initial props - different color and outline.</li>
 <li>Change editors initial props - to use Cesium <code>CallbackProperties</code>.</li>
 </ul>
-<h2 id="0-56">0.56</h2>
-<h3 id="features">Features</h3>
+<h2 id="056">0.56</h2>
+<h3 id="features-8">Features</h3>
 <ul>
 <li>Added <code>onDrag</code> hook into the <code>ac-toolbar</code> component.</li>
 <li>Altered <code>ac-toolbar</code> to listen in to changes on its <code>allowDrag</code> input and subscribe/unsubscribe dynamically.</li>
@@ -159,13 +159,13 @@ using <code>clampHeightTo3DOptions.clampMostDetailed = true</code>.</li>
 <li>Added keepRotation option to <code>ZoomToRectangleService</code> options.</li>
 <li>Added mouseButton option to <code>ZoomToRectangleService</code> options.</li>
 </ul>
-<h2 id="0-55">0.55</h2>
-<h3 id="features">Features</h3>
+<h2 id="055">0.55</h2>
+<h3 id="features-9">Features</h3>
 <ul>
 <li>New Angular CLI build system.</li>
 </ul>
-<h2 id="0-54">0.54</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="054">0.54</h2>
+<h3 id="fixes-10">Fixes</h3>
 <ul>
 <li>Fixed <code>ac-layer</code> onDestroy.</li>
 <li>Fixed <code>ac-map</code> onDestroy.</li>
@@ -174,7 +174,7 @@ using <code>clampHeightTo3DOptions.clampMostDetailed = true</code>.</li>
 <li>Fixed entities drawing directly to map - without ac-layer <a href="https://github.com/TGFTech/angular-cesium/issues/212">#212</a>.</li>
 <li>Fixed plonter behavior.</li>
 </ul>
-<h3 id="features">Features</h3>
+<h3 id="features-10">Features</h3>
 <ul>
 <li>Multiple <code>AcMap</code> support using <code>ngFor</code> - The optional <code>@Input() containerId</code> in <code>AcMap</code> can be used to place the map canvas in any container / move the canvas to a new container.</li>
 <li>New <code>bind2DMapsCameras()</code> function added to <code>MapsManagerService</code> for binding cameras position in different 2D maps.</li>
@@ -185,40 +185,40 @@ using <code>clampHeightTo3DOptions.clampMostDetailed = true</code>.</li>
 <li>Added initial support for <code>Cesium.CallbackProperty</code>.</li>
 <li>Added new ellipses shape editor that can be used to draw circles and ellipses.</li>
 </ul>
-<h2 id="0-53">0.53</h2>
-<h3 id="features">Features</h3>
+<h2 id="053">0.53</h2>
+<h3 id="features-11">Features</h3>
 <ul>
 <li>New <code>&lt;ac-czml-desc&gt;</code> component for adding CzmlDataSource to ac-layer.</li>
 <li>New <code>czml-drawer</code> service </li>
 <li>New <code>&lt;czml-layer</code> component in demo app to show usage of <code>&lt;ac-czml-desc&gt;</code></li>
 <li>Support RxJs 6 </li>
 </ul>
-<h3 id="fixes">Fixes</h3>
+<h3 id="fixes-11">Fixes</h3>
 <ul>
 <li>Fixed AOT compilation for angular 6, the issue was with <code>angular2parse</code> reaching angular compiler pipes.</li>
 <li>Fixed Shape editors points zIndex in 2D.  </li>
 <li>Updated demo dependencies</li>
 </ul>
-<h3 id="breaking-changes">Breaking Changes</h3>
+<h3 id="breaking-changes-3">Breaking Changes</h3>
 <ul>
 <li>From now Angular Pipes need to be set in <code>AngularCesiumModule.forRoot(ustomPipes: myCustomPipes)</code>.
 angular-cesium won&#39;t be aware of pipes that wont be defined as <code>customPipes</code>.
 There for any user Pipes need to be declared when initializing angular cesium.</li>
 <li>For upgrade to 0.53 from older versions remove <code>rxjs-compat</code> dependency and refactor to rxjs 6 new import paths.  </li>
 </ul>
-<h2 id="0-0-52">0.0.52</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="0052">0.0.52</h2>
+<h3 id="fixes-12">Fixes</h3>
 <ul>
 <li>Fixed shape editors 2D points bug - remove height reference</li>
 <li>Fixed polygon editor moving point updates</li>
 </ul>
-<h2 id="0-0-51">0.0.51</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="0051">0.0.51</h2>
+<h3 id="fixes-13">Fixes</h3>
 <ul>
 <li>Fixed <code>package.json</code> engines section. </li>
 </ul>
-<h2 id="0-0-50">0.0.50</h2>
-<h3 id="features">Features</h3>
+<h2 id="0050">0.0.50</h2>
+<h3 id="features-12">Features</h3>
 <ul>
 <li>New <code>&lt;range-and-bearing&gt;</code> component that is used to to draw range &amp; bearing on the map.</li>
 <li>Refactored <code>KeyboardControlService</code> docs.</li>
@@ -226,12 +226,12 @@ There for any user Pipes need to be declared when initializing angular cesium.</
 <li>Refactored <code>KeyboardControlService</code> docs. </li>
 <li>Added flyTo options to <code>CameraService.trackEntity()</code> + example in the demo.</li>
 </ul>
-<h3 id="fixes">Fixes</h3>
+<h3 id="fixes-14">Fixes</h3>
 <ul>
 <li><code>ac-point-desc</code> changed to Entity instead of Primitive. For primitive use <code>ac-point-primitive-desc</code>.</li>
 </ul>
-<h2 id="0-0-49">0.0.49</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="0049">0.0.49</h2>
+<h3 id="fixes-15">Fixes</h3>
 <ul>
 <li>Fixed mistakenly rejecting Observables from other contexts</li>
 <li>Fixed <code>ac-toolbar</code> onDestroy() <a href="https://github.com/TGFTech/angular-cesium/issues/217">#217</a>.</li>
@@ -241,143 +241,143 @@ There for any user Pipes need to be declared when initializing angular cesium.</
 <li>Changed <code>SmartAssigner</code> allowUndefined default from true to false</li>
 <li>Removed deprecated code in <code>ViewerFactory</code> that set CESIUM_BASE_URL if ti wasn&#39;t already set.</li>
 </ul>
-<h2 id="0-0-48">0.0.48</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="0048">0.0.48</h2>
+<h3 id="fixes-16">Fixes</h3>
 <ul>
 <li>Fixed <code>ac-circle-desc</code> radius changing.</li>
 <li>Fixed <code>ac-ellipse-desc</code> &amp; <code>ac-circle-desc</code> updating bug</li>
 </ul>
-<h2 id="0-0-45">0.0.45</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="0045">0.0.45</h2>
+<h3 id="fixes-17">Fixes</h3>
 <ul>
 <li>Some minor fixes</li>
 </ul>
-<h2 id="0-0-43">0.0.43</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="0043">0.0.43</h2>
+<h3 id="fixes-18">Fixes</h3>
 <ul>
 <li>Improved shape editors performance</li>
 <li>Fixed undragable editable hippodrome</li>
 <li>Fixed editable hippodrome updating</li>
 <li>Fixed editing multiple shapes of the same type simultaneously</li>
 </ul>
-<h3 id="features">Features</h3>
+<h3 id="features-13">Features</h3>
 <ul>
 <li>Labels of editable shapes now update on mouse move</li>
 <li>Update Cesium version to 1.41.0</li>
 </ul>
-<h2 id="0-0-42">0.0.42</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="0042">0.0.42</h2>
+<h3 id="fixes-19">Fixes</h3>
 <ul>
 <li>Fixed <code>PolygonsEditorService</code> shape drag</li>
 </ul>
-<h2 id="0-0-41">0.0.41</h2>
-<h3 id="features">Features</h3>
+<h2 id="0041">0.0.41</h2>
+<h3 id="features-14">Features</h3>
 <ul>
 <li>Added <code>pickFilter</code> to <code>EventRegistrationInput</code> - you can now pass a filter function to <code>MapEventsManager.register()</code> - in order to filter the returned entities.</li>
 </ul>
-<h3 id="fixes">Fixes</h3>
+<h3 id="fixes-20">Fixes</h3>
 <ul>
 <li>Fixed editing of multiple shapes simultaneously</li>
 </ul>
-<h2 id="0-0-40">0.0.40</h2>
-<h3 id="features">Features</h3>
+<h2 id="0040">0.0.40</h2>
+<h3 id="features-15">Features</h3>
 <ul>
 <li>Upgraded to Angular 5</li>
 <li>Fixed aot build</li>
 </ul>
-<h2 id="0-0-39">0.0.39</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="0039">0.0.39</h2>
+<h3 id="fixes-21">Fixes</h3>
 <ul>
 <li>Fix range and bearing example</li>
 </ul>
-<h3 id="features">Features</h3>
+<h3 id="features-16">Features</h3>
 <ul>
 <li>Added <code>ac-primitive-polyline</code> - Using primitive drawer</li>
 </ul>
-<h2 id="0-0-37">0.0.37</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="0037">0.0.37</h2>
+<h3 id="fixes-22">Fixes</h3>
 <ul>
 <li>Html Primitive - change primitive screen position to Cesium.Cartesian2</li>
 <li>Fix demo typescript compilation</li>
 <li>Fix project implicit any</li>
 <li>Change <code>ngOutletContext</code> to <code>ngTemplateOutletContext</code></li>
 </ul>
-<h2 id="0-0-36">0.0.36</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="0036">0.0.36</h2>
+<h3 id="fixes-23">Fixes</h3>
 <ul>
 <li>Hippodrome Editor - Expose hippodrome width</li>
 </ul>
-<h3 id="breaking-changes">Breaking Changes</h3>
+<h3 id="breaking-changes-4">Breaking Changes</h3>
 <ul>
 <li><code>HippodromeEditorService</code> is no longer provided by <code>AngularCesiumWidgetsModule</code>, user should provide it himself</li>
 <li><code>CircleEditorService</code> is no longer provided by <code>AngularCesiumWidgetsModule</code>, user should provide it himself</li>
 <li><code>PolylineEditorService</code> is no longer provided by <code>AngularCesiumWidgetsModule</code>, user should provide it himself</li>
 <li><code>PolygonEditorService</code> is no longer provided by <code>AngularCesiumWidgetsModule</code>, user should provide it himself</li>
 </ul>
-<h2 id="0-0-35">0.0.35</h2>
-<h3 id="features">Features</h3>
+<h2 id="0035">0.0.35</h2>
+<h3 id="features-17">Features</h3>
 <ul>
 <li>Added <code>calcEllipseContainingRect</code> static function to <code>CesiumHeatMapMaterialCreator</code></li>
 <li>Added <code>ac-toolbar</code> and <code>ac-toolbar-button</code> components</li>
 <li>Added toolbar example and flyTo home toolbar option</li>
 <li>Added Range and bearing example</li>
 </ul>
-<h3 id="breaking-changes">Breaking changes</h3>
+<h3 id="breaking-changes-5">Breaking changes</h3>
 <ul>
 <li><code>AngularCesiumEntitiesDrawerModule</code> refactored to <code>AngularCesiumWigetsModule</code></li>
 </ul>
-<h2 id="0-0-34">0.0.34</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="0034">0.0.34</h2>
+<h3 id="fixes-24">Fixes</h3>
 <ul>
 <li>Fixed a bug in editors.</li>
 </ul>
-<h3 id="features">Features</h3>
+<h3 id="features-18">Features</h3>
 <ul>
 <li>Added customizable labels to shape editors.</li>
 <li>Added <code>DraggableToMapDirective</code> directive for dragging icons from outside the map over the map.</li>
 <li>Added <code>IconDragService</code> service that exposes an observable that listens to dragging with <code>DraggableToMapDirective</code>.</li>
 </ul>
-<h2 id="0-0-33">0.0.33</h2>
-<h2 id="fixes">Fixes</h2>
+<h2 id="0033">0.0.33</h2>
+<h2 id="fixes-25">Fixes</h2>
 <ul>
 <li>fix missing Cartesian3 typings</li>
 </ul>
-<h2 id="0-0-32">0.0.32</h2>
-<h3 id="features">Features</h3>
+<h2 id="0032">0.0.32</h2>
+<h3 id="features-19">Features</h3>
 <ul>
 <li>Polyline edtior supports drag shape events.</li>
 <li>Add ability to change width to Hippodrome editor</li>
 <li>Added <code>ac-array-desc</code> for representing dynamic arrays in entity - ALPHA</li>
 </ul>
-<h2 id="fixes">Fixes</h2>
+<h2 id="fixes-26">Fixes</h2>
 <ul>
 <li>Hippodrome editor - setManually supports positions and hippodrome width.</li>
 <li>Fixed Polygons Editing  bug that happened when dragging a point.</li>
 <li>Fixed Polyline Editing bug that happened when dragging a point.</li>
 <li>Fixed <code>EntitesDrawerService</code> show prop bug.</li>
 </ul>
-<h2 id="breaking-changes">Breaking changes</h2>
+<h2 id="breaking-changes-6">Breaking changes</h2>
 <ul>
 <li>Observer Editors methods: <code>setPolygonManually()</code>, <code>setPolylineManually()</code>,<code>setCircleManually()</code>,<code>setHippodromeManually()</code> changed to: <code>setManually()</code>.
 Each shape accepts here own specific arguments to configure the edited object, for example: <code>polygonEditor$.setManaually(positions, pointOptions, polygonOptions)</code>.</li>
 </ul>
-<h2 id="0-0-31">0.0.31</h2>
-<h3 id="features">Features</h3>
+<h2 id="0031">0.0.31</h2>
+<h3 id="features-20">Features</h3>
 <ul>
 <li>All editors now except allowDrag option to allow or disable the ability to drag the edited shape.</li>
 <li>Added options to circle editor  - <code>CircleEditOptions</code>.</li>
 </ul>
-<h3 id="fixes">Fixes</h3>
+<h3 id="fixes-27">Fixes</h3>
 <ul>
 <li>Fix hippodrome editor outline bug.</li>
 <li>Fixed bug that caused polygons hiding to throw an error if they had outline.</li>
 </ul>
-<h2 id="0-0-30">0.0.30</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="0030">0.0.30</h2>
+<h3 id="fixes-28">Fixes</h3>
 <ul>
 <li>Service init order  <a href="https://github.com/TGFTech/angular-cesium/issues/131">#131</a></li>
 </ul>
-<h3 id="features">Features</h3>
+<h3 id="features-21">Features</h3>
 <ul>
 <li>Added <code>selectionManagerService</code> and example in selection-layer.component.ts</li>
 <li>Added context menu service that allows dynamic injection of custom components.</li>
@@ -389,49 +389,49 @@ Each shape accepts here own specific arguments to configure the edited object, f
 <li>added <code>ac-point-primitive-desc</code></li>
 <li>added <code>ac-html-desc</code> - ac-layer supports ac-html</li>
 </ul>
-<h2 id="0-0-29">0.0.29</h2>
-<h3 id="features">Features</h3>
+<h2 id="0029">0.0.29</h2>
+<h3 id="features-22">Features</h3>
 <ul>
 <li>polygon editor(alpha) - edit points manually.</li>
 </ul>
-<h2 id="0-0-28">0.0.28</h2>
-<h3 id="features">Features</h3>
+<h2 id="0028">0.0.28</h2>
+<h3 id="features-23">Features</h3>
 <ul>
 <li>polygon editor(alpha) - edit mode, disable,enable, add points to the editor result.</li>
 </ul>
-<h2 id="0-0-26">0.0.26</h2>
-<h3 id="features">Features</h3>
+<h2 id="0026">0.0.26</h2>
+<h3 id="features-24">Features</h3>
 <ul>
 <li>added screenshot service</li>
 <li>polygon editor - alpha</li>
 </ul>
-<h2 id="0-0-25">0.0.25</h2>
-<h3 id="fixes">Fixes</h3>
+<h2 id="0025">0.0.25</h2>
+<h3 id="fixes-29">Fixes</h3>
 <ul>
 <li>fix draw on map example</li>
 </ul>
-<h2 id="0-0-21">0.0.21</h2>
-<h3 id="features">Features</h3>
+<h2 id="0021">0.0.21</h2>
+<h3 id="features-25">Features</h3>
 <ul>
 <li>Allow <code>KeyboardControlService</code> to run outside of angular zone.</li>
 </ul>
-<h2 id="0-0-20">0.0.20</h2>
-<h3 id="features">Features</h3>
+<h2 id="0020">0.0.20</h2>
+<h3 id="features-26">Features</h3>
 <ul>
 <li>Added <code>enableInput()</code>, <code>enableZoom()</code> to <code>CameraService</code>.</li>
 </ul>
-<h3 id="fixes">Fixes</h3>
+<h3 id="fixes-30">Fixes</h3>
 <ul>
 <li>Fixed bug removed default height 0</li>
 <li>Fixed AngularCesiumModule loading</li>
 <li>Fixed <code>npm run server</code></li>
 </ul>
-<h3 id="breaking-changes">Breaking Changes</h3>
+<h3 id="breaking-changes-7">Breaking Changes</h3>
 <ul>
 <li>Renamed <code>ModuleOptions</code> to <code>ModuleConfiguration</code>.</li>
 </ul>
-<h2 id="0-0-19">0.0.19</h2>
-<h3 id="features">Features</h3>
+<h2 id="0019">0.0.19</h2>
+<h3 id="features-27">Features</h3>
 <ul>
 <li>Added <code>done</code> callback to <code>KeyboardControlService</code> definitions - now it&#39;s possible to know when the event is done.</li>
 <li>Added internal <code>IGNORED</code> state to <code>KeyboardControlService</code> - now when action returns <code>false</code> it will ignore it until the next event cycle (keydown then keyup)</li>
@@ -440,7 +440,7 @@ Each shape accepts here own specific arguments to configure the edited object, f
 <li>Added <code>[sceneMode]</code> attribute to <code>ac-map</code> .</li>
 <li>Added new components: <code>ac-billboard-primitive-desc</code>, <code>ac-label-primitive-desc</code>, <code>ac-polyline-primitive-desc</code>. The components uses Cesium Primitives for performance efficient drawing of map entities.</li>
 </ul>
-<h3 id="breaking-changes">Breaking Changes</h3>
+<h3 id="breaking-changes-8">Breaking Changes</h3>
 <ul>
 <li>Event triggered from <code>KeyboardControlService</code> is now triggered with <code>cesiumService: CesiumService, key: string, keyboardEvent: KeyboardEvent</code>.</li>
 <li>CesiumService no longer supports camera actions such as <code>setEnableTilt</code>, <code>setMaximumZoom</code>, etc... - instead use CameraService that is provided by <code>ac-map</code>.</li>
@@ -449,8 +449,8 @@ Each shape accepts here own specific arguments to configure the edited object, f
 <li><code>ViewersManagerService</code> renamed into <code>MapsManagerService</code>. It now manage ac-map instances. Internal functions changed accordingly to <code>getMap()</code> and <code>registerMap()</code>. The logic remained the same.</li>
 <li><code>AngularCesiumModule</code> should be loaded with <code>.forRoot()</code>. Additionally, <code>AngularCesiumModule.forRoot()</code> takes options of type <code>ModuleOptions</code>. Fixes cesium <a href="https://github.com/AnalyticalGraphicsInc/cesium/pull/5736">bug</a> (height=0 on entities creates entities with shadows,shadows cant be turn off).</li>
 </ul>
-<h2 id="0-0-18">0.0.18</h2>
-<h3 id="features">Features</h3>
+<h2 id="0018">0.0.18</h2>
+<h3 id="features-28">Features</h3>
 <ul>
 <li>Exposed <code>onDraw</code> and <code>onRemove</code> for <code>BasicDesc</code> component - now it&#39;s possible to know when an Cesium object is drawn.</li>
 <li>Exposed <code>getCesiumObjectsMap</code> from <code>BasicDesc</code> component.</li>
@@ -466,15 +466,15 @@ Each shape accepts here own specific arguments to configure the edited object, f
 </ul>
 </li>
 </ul>
-<h2 id="0-0-15">0.0.15</h2>
-<h3 id="features">Features</h3>
+<h2 id="0015">0.0.15</h2>
+<h3 id="features-29">Features</h3>
 <ul>
 <li>Expose <code>MapEventManagerService</code> from <code>&lt;ac-map #map/&gt;</code> component reference: <code>acMapComponent.getMapEventManager()</code></li>
 <li>New <code>KeyboardControlService</code> for controlling the camera using the keyboard</li>
 <li>add <code>&lt;ac-3d-tile-layer/&gt;</code> for 3d tiles</li>
 </ul>
-<h2 id="0-0-14">0.0.14</h2>
-<h3 id="breaking-changes">Breaking changes</h3>
+<h2 id="0014">0.0.14</h2>
+<h3 id="breaking-changes-9">Breaking changes</h3>
 <ul>
 <li>deprecated:<ul>
 <li>AcStaticEllipseDescComponent, instead use <code>ac-ellipse-desc</code></li>
@@ -487,18 +487,18 @@ Each shape accepts here own specific arguments to configure the edited object, f
 <li>MapEventManagerService: EventResult.primitives changed to EventResult.cesiumEntities</li>
 <li><code>ac-polyline-desc</code> and <code>ac-polyline</code> accept Cesium.Color as material in props input.</li>
 </ul>
-<h3 id="features">Features</h3>
+<h3 id="features-30">Features</h3>
 <ul>
 <li>support models <code>ac-model-desc</code></li>
 </ul>
-<h2 id="0-0-13">0.0.13</h2>
-<h3 id="features">Features</h3>
+<h2 id="0013">0.0.13</h2>
+<h3 id="features-31">Features</h3>
 <ul>
 <li>ac-map-layer-provider - Support all cesium imagery providers</li>
 <li>Expose cesium viewer through ViewesManagerService and <code>ac-map</code></li>
 </ul>
-<h2 id="0-0-12-30-7-17-">0.0.12 (30-7-17)</h2>
-<h3 id="breaking-changes">Breaking changes</h3>
+<h2 id="0012-30-7-17">0.0.12 (30-7-17)</h2>
+<h3 id="breaking-changes-10">Breaking changes</h3>
 <ul>
 <li>AcEntity id filed changed to string from number</li>
 <li>AcNotification id filed changed to string from number</li>
@@ -517,6 +517,7 @@ Each shape accepts here own specific arguments to configure the edited object, f
 
 
 
+                   
 
 
 
@@ -539,6 +540,7 @@ Each shape accepts here own specific arguments to configure the edited object, f
             var COMPODOC_CURRENT_PAGE_DEPTH = 0;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
             var COMPODOC_CURRENT_PAGE_URL = 'changelog.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="./js/libs/custom-elements.min.js"></script>

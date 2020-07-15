@@ -71,13 +71,17 @@ The properties of props are the same as the properties of Entity and PointGraphi
 <li><a href="https://cesiumjs.org/Cesium/Build/Documentation/PointGraphics.html">https://cesiumjs.org/Cesium/Build/Documentation/PointGraphics.html</a></li>
 </ul>
 <p><strong>Usage:</strong></p>
-<div><pre class="line-numbers"><code class="language-none"> *   &lt;ac-point-desc props=&quot;{
- *     pixelSize : point.pixelSize, //optional
- *     position : point.positions,
- *     color : point.color  //optional
- *   }&quot;&gt;
- *   &lt;/ac-point-desc&gt;
- *</code></pre></div>
+<p>```</p>
+<ul>
+<li>&lt;ac-point-desc props=&quot;{</li>
+<li>pixelSize : point.pixelSize, //optional</li>
+<li>position : point.positions,</li>
+<li>color : point.color  //optional</li>
+<li>}&quot;&gt;</li>
+<li></ac-point-desc></li>
+<li>```</li>
+</ul>
+
     </p>
 
     <p class="comment">
@@ -105,7 +109,7 @@ The properties of props are the same as the properties of Entity and PointGraphi
             <tr>
                 <td class="col-md-3">providers</td>
                 <td class="col-md-9">
-                            <code><a href="../components/AcPointDescComponent.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcPointDescComponent) }</a></code>
+                                <code><a href="../components/AcPointDescComponent.html" target="_self" >{ provide: BasicDesc, useExisting: forwardRef(() &#x3D;&gt; AcPointDescComponent) }</a></code>
                 </td>
             </tr>
 
@@ -199,7 +203,7 @@ The properties of props are the same as the properties of Entity and PointGraphi
                                                         <td>cesiumProperties</td>
                                                   
                                                         <td>
-                                                                    <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
+                                                                        <code><a href="../injectables/CesiumProperties.html" target="_self" >CesiumProperties</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -308,6 +312,7 @@ export class AcPointDescComponent extends BasicDesc {
 
 
 
+                   
 
 
 
@@ -330,6 +335,7 @@ export class AcPointDescComponent extends BasicDesc {
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
             var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
             var COMPODOC_CURRENT_PAGE_URL = 'AcPointDescComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
        </script>
 
        <script src="../js/libs/custom-elements.min.js"></script>
