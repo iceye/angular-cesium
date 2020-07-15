@@ -1,6 +1,6 @@
 {
   "name": "iceye-angular-cesium-fork",
-  "version": "0.0.66-c",
+  "version": "0.0.66-d",
   "license": "MIT",
   "description": "Forked Angular library for working with Cesium.",
   "repository": "https://github.com/iceye/angular-cesium/",

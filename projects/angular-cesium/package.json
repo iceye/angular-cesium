@@ -1,9 +1,9 @@
 {
-  "name": "angular-cesium",
-  "version": "0.0.66",
+  "name": "iceye-angular-cesium-fork",
+  "version": "0.0.66-d",
   "license": "MIT",
   "description": "Angular library for working with Cesium.",
-  "repository": "https://github.com/articodeltd/angular-cesium",
+  "repository": "https://github.com/iceye/angular-cesium/",
   "keywords": [
     "Angular",
     "Cesium",
@@ -11,12 +11,12 @@
     "Angular2 Cesium"
   ],
   "peerDependencies": {
-    "@angular/common": "^8.0.1 || ^9.0.1",
-    "@angular/core": "^8.0.1 || ^9.0.1",
+    "@angular/common": "^10.0.3",
+    "@angular/core": "^10.0.3",
     "cesium": ">= 1.48.0"
   },
   "dependencies": {
-    "angular2parse": "1.0.10",
+    "angular2parse": "^1.0.10",
     "geodesy": "^2.2.1",
     "json-string-mapper": "^1.0.0",
     "lodash.get": "^4.4.2",
